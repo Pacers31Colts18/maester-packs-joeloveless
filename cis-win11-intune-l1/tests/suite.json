@@ -1,0 +1,10 @@
+{
+  "Id": "JL.CISW11INT.L1",
+  "Name": "CIS Windows 11 Intune L1",
+  "Source": "Custom",
+  "Tags": ["CIS-Intune", "L1"],
+  "RequiresMaester": "3.0",
+  "Frameworks": [
+    { "Key": "cis-intune-win11-l1" }
+  ]
+}

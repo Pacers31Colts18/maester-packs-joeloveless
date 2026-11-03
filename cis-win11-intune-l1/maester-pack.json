@@ -1,0 +1,25 @@
+{
+  "$schema": "https://maester.dev/schemas/maester-pack-1.0.json",
+  "Id": "pacers31colts18.cis-win11-intune-l1",
+  "Guid": "1e9d812c-1f74-4060-8f0c-fb1a19dbdc1d",
+  "Name": "CIS Windows 11 Intune L1",
+  "Description": "Checks that Intune policies configure the Level 1 recommendations of the CIS Microsoft Intune for Windows 11 Benchmark v5.0.0. One test per setting.",
+  "Version": "0.1.0",
+  "Publisher": "pacers31colts18",
+  "License": "MIT",
+  "Homepage": "https://github.com/Pacers31Colts18/maester-packs-joeloveless/tree/main/cis-win11-intune-l1",
+  "Support": "https://github.com/Pacers31Colts18/maester-packs-joeloveless/issues",
+  "RequiresMaester": ">=3.0",
+  "Code": "JL.CISW11INT.L1",
+  "Suites": ["tests"],
+  "Helpers": ["helpers"],
+  "Guide": "maester-pack.guide.json",
+  "Uses": {
+    "Services": ["Graph"],
+    "GraphScopes": ["DeviceManagementConfiguration.Read.All", "GroupMember.Read.All"],
+    "TenantWrites": [],
+    "Network": [],
+    "Modules": []
+  },
+  "Categories": ["Intune", "Devices", "Windows", "CIS", "Above Lock"]
+}

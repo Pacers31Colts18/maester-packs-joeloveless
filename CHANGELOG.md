@@ -1,0 +1,313 @@
+# Changelog
+
+## cis-win11-intune-l1 0.1.0
+
+First version.
+
+- **MP.JL.CISW11INT.L1.001** Allow Cortana Above Lock is set to Block
+- **MP.JL.CISW11INT.L1.002** Allow Toasts is set to Block
+- **MP.JL.CISW11INT.L1.003** Prevent enabling lock screen camera is set to Enabled
+- **MP.JL.CISW11INT.L1.004** Apply UAC restrictions to local accounts on network logons is set to Enabled
+- **MP.JL.CISW11INT.L1.005** Configure SMB v1 client driver is set to Enabled: Disable driver (recommended)
+- **MP.JL.CISW11INT.L1.006** Configure SMB v1 server is set to Disabled
+- **MP.JL.CISW11INT.L1.007** Enable Structured Exception Handling Overwrite Protection (SEHOP) is set to Enabled
+- **MP.JL.CISW11INT.L1.008** WDigest Authentication (disabling may require KB2871997) is set to Disabled
+- **MP.JL.CISW11INT.L1.009** MSS: (AutoAdminLogon) Enable Automatic Logon (not recommended) is set to Disabled
+- **MP.JL.CISW11INT.L1.010** MSS: (DisableIPSourceRouting IPv6) IP source routing protection level (protects against packet spoofing) is set to Enabled: Highest protection, source routing is completely disabled
+- **MP.JL.CISW11INT.L1.011** MSS: (DisableIPSourceRouting) IP source routing protection level (protects against packet spoofing) is set to Enabled: Highest protection, source routing is completely disabled
+- **MP.JL.CISW11INT.L1.012** MSS: (EnableICMPRedirect) Allow ICMP redirects to override OSPF generated routes is set to Disabled
+- **MP.JL.CISW11INT.L1.013** MSS: (NoNameReleaseOnDemand) Allow the computer to ignore NetBIOS name release requests except from WINS servers is set to Enabled
+- **MP.JL.CISW11INT.L1.014** MSS: (SafeDllSearchMode) Enable Safe DLL search mode (recommended) is set to Enabled
+- **MP.JL.CISW11INT.L1.015** MSS: (WarningLevel) Percentage threshold for the security event log at which the system will generate a warning: WarningLevel is set to Enabled: 90% or less
+- **MP.JL.CISW11INT.L1.016** Turn off multicast name resolution is set to Enabled
+- **MP.JL.CISW11INT.L1.017** Prohibit installation and configuration of Network Bridge on your DNS domain network is set to Enabled
+- **MP.JL.CISW11INT.L1.018** Prohibit use of Internet Connection Sharing on your DNS domain network is set to Enabled
+- **MP.JL.CISW11INT.L1.019** Require domain users to elevate when setting a network's location is set to Enabled
+- **MP.JL.CISW11INT.L1.020** Hardened UNC Paths is set to Enabled: \\*\NETLOGON and \\*\SYSVOL with RequireIntegrity=1,RequireMutualAuthentication=1,RequirePrivacy=1
+- **MP.JL.CISW11INT.L1.021** Minimize the number of simultaneous connections to the Internet or a Windows Domain is set to Enabled: 3 = Prevent Wi-Fi when on Ethernet
+- **MP.JL.CISW11INT.L1.022** Prohibit connection to non-domain networks when connected to domain authenticated network is set to Enabled
+- **MP.JL.CISW11INT.L1.023** Allow Print Spooler to accept client connections is set to Disabled
+- **MP.JL.CISW11INT.L1.024** Configure Redirection Guard: Redirection Guard Options is set to Enabled: Redirection Guard Enabled
+- **MP.JL.CISW11INT.L1.025** Configure RPC connection settings: Protocol to use for outgoing RPC connections is set to Enabled: RPC over TCP
+- **MP.JL.CISW11INT.L1.026** Configure RPC connection settings: Use authentication for outgoing RPC connections is set to Enabled: Default
+- **MP.JL.CISW11INT.L1.027** Configure RPC listener settings: Authentication protocol to use for incoming RPC connections is set to Enabled: Negotiate or Kerberos
+- **MP.JL.CISW11INT.L1.028** Configure RPC listener settings: Protocols to allow for incoming RPC connections is set to Enabled: RPC over TCP
+- **MP.JL.CISW11INT.L1.029** Configure RPC over TCP port: RPC over TCP port is set to Enabled: 0
+- **MP.JL.CISW11INT.L1.030** Limits print driver installation to Administrators is set to Enabled
+- **MP.JL.CISW11INT.L1.031** Manage processing of Queue-specific files: Manage processing of Queue-Specific files is set to Enabled: Limit Queue-specific files to Color profiles
+- **MP.JL.CISW11INT.L1.032** Point and Print Restrictions: When installing drivers for a new connection is set to Enabled: Show warning and elevation prompt
+- **MP.JL.CISW11INT.L1.033** Point and Print Restrictions: When updating drivers for an existing connection is set to Enabled: Show warning and elevation prompt
+- **MP.JL.CISW11INT.L1.034** Include command line in process creation events is set to Enabled
+- **MP.JL.CISW11INT.L1.035** Encryption Oracle Remediation is set to Enabled: Force Updated Clients
+- **MP.JL.CISW11INT.L1.036** Remote host allows delegation of non-exportable credentials is set to Enabled
+- **MP.JL.CISW11INT.L1.037** Prevent automatic download of applications associated with device metadata is set to Enabled
+- **MP.JL.CISW11INT.L1.038** Boot-Start Driver Initialization Policy is set to Enabled: Good, unknown and bad but critical
+- **MP.JL.CISW11INT.L1.039** Continue experiences on this device is set to Disabled
+- **MP.JL.CISW11INT.L1.040** Turn off downloading of print drivers over HTTP is set to Enabled
+- **MP.JL.CISW11INT.L1.041** Turn off Internet download for Web publishing and online ordering wizards is set to Enabled
+- **MP.JL.CISW11INT.L1.042** Allow Custom SSPs and APs to be loaded into LSASS is set to Disabled
+- **MP.JL.CISW11INT.L1.043** Block user from showing account details on sign-in is set to Enabled
+- **MP.JL.CISW11INT.L1.044** Do not display network selection UI is set to Enabled
+- **MP.JL.CISW11INT.L1.045** Do not enumerate connected users on domain-joined computers is set to Enabled
+- **MP.JL.CISW11INT.L1.046** Enumerate local users on domain-joined computers is set to Disabled
+- **MP.JL.CISW11INT.L1.047** Turn off app notifications on the lock screen is set to Enabled
+- **MP.JL.CISW11INT.L1.048** Turn off picture password sign-in is set to Enabled
+- **MP.JL.CISW11INT.L1.049** Turn on convenience PIN sign-in is set to Disabled
+- **MP.JL.CISW11INT.L1.050** Require a password when a computer wakes (on battery) is set to Enabled
+- **MP.JL.CISW11INT.L1.051** Require a password when a computer wakes (plugged in) is set to Enabled
+- **MP.JL.CISW11INT.L1.052** Configure Offer Remote Assistance is set to Disabled
+- **MP.JL.CISW11INT.L1.053** Configure Solicited Remote Assistance is set to Disabled
+- **MP.JL.CISW11INT.L1.054** Enable RPC Endpoint Mapper Client Authentication is set to Enabled
+- **MP.JL.CISW11INT.L1.055** Restrict Unauthenticated RPC clients is set to Enabled: Authenticated
+- **MP.JL.CISW11INT.L1.056** Enable Windows NTP Client is set to Enabled
+- **MP.JL.CISW11INT.L1.057** Enable Windows NTP Server is set to Disabled
+- **MP.JL.CISW11INT.L1.058** Allow Microsoft accounts to be optional is set to Enabled
+- **MP.JL.CISW11INT.L1.059** Do not preserve zone information in file attachments (User) is set to Disabled
+- **MP.JL.CISW11INT.L1.060** Notify antivirus programs when opening attachments (User) is set to Enabled
+- **MP.JL.CISW11INT.L1.061** Disallow Autoplay for non-volume devices is set to Enabled
+- **MP.JL.CISW11INT.L1.062** Set the default behavior for AutoRun is set to Enabled: Do not execute any autorun commands
+- **MP.JL.CISW11INT.L1.063** Turn off Autoplay is set to Enabled: All drives
+- **MP.JL.CISW11INT.L1.064** Do not display the password reveal button is set to Enabled
+- **MP.JL.CISW11INT.L1.065** Enumerate administrator accounts on elevation is set to Disabled
+- **MP.JL.CISW11INT.L1.066** Prevent the use of security questions for local accounts is set to Enabled
+- **MP.JL.CISW11INT.L1.067** Enable App Installer Experimental Features is set to Disabled
+- **MP.JL.CISW11INT.L1.068** Enable App Installer Hash Override is set to Disabled
+- **MP.JL.CISW11INT.L1.069** Enable App Installer ms-appinstaller protocol is set to Disabled
+- **MP.JL.CISW11INT.L1.070** Control Event Log behavior when the log file reaches its maximum size is set to Disabled
+- **MP.JL.CISW11INT.L1.071** Specify the maximum log file size (KB): Maximum Log Size (KB) is set to Enabled: 32,768 or more
+- **MP.JL.CISW11INT.L1.072** Control Event Log behavior when the log file reaches its maximum size is set to Disabled
+- **MP.JL.CISW11INT.L1.073** Specify the maximum log file size (KB): Maximum Log Size (KB) is set to Enabled: 196,608 or more
+- **MP.JL.CISW11INT.L1.074** Control Event Log behavior when the log file reaches its maximum size is set to Disabled
+- **MP.JL.CISW11INT.L1.075** Specify the maximum log file size (KB): Maximum Log Size (KB) is set to Enabled: 32,768 or more
+- **MP.JL.CISW11INT.L1.076** Control Event Log behavior when the log file reaches its maximum size is set to Disabled
+- **MP.JL.CISW11INT.L1.077** Specify the maximum log file size (KB): Maximum Log Size (KB) is set to Enabled: 32,768 or more
+- **MP.JL.CISW11INT.L1.078** Configure Windows Defender SmartScreen is set to Enabled: Warn and prevent bypass
+- **MP.JL.CISW11INT.L1.079** Turn off Data Execution Prevention for Explorer is set to Disabled
+- **MP.JL.CISW11INT.L1.080** Turn off heap termination on corruption is set to Disabled
+- **MP.JL.CISW11INT.L1.081** Turn off shell protocol protected mode is set to Disabled
+- **MP.JL.CISW11INT.L1.082** Block all consumer Microsoft account user authentication is set to Enabled
+- **MP.JL.CISW11INT.L1.083** Prevent users from sharing files within their profile. (User) is set to Enabled
+- **MP.JL.CISW11INT.L1.084** Do not allow passwords to be saved is set to Enabled
+- **MP.JL.CISW11INT.L1.085** Do not allow drive redirection is set to Enabled
+- **MP.JL.CISW11INT.L1.086** Always prompt for password upon connection is set to Enabled
+- **MP.JL.CISW11INT.L1.087** Require secure RPC communication is set to Enabled
+- **MP.JL.CISW11INT.L1.088** Require use of specific security layer for remote (RDP) connections is set to Enabled: SSL
+- **MP.JL.CISW11INT.L1.089** Require user authentication for remote connections by using Network Level Authentication is set to Enabled
+- **MP.JL.CISW11INT.L1.090** Set client connection encryption level is set to Enabled: High Level
+- **MP.JL.CISW11INT.L1.091** Do not delete temp folders upon exit is set to Disabled
+- **MP.JL.CISW11INT.L1.092** Prevent downloading of enclosures is set to Enabled
+- **MP.JL.CISW11INT.L1.093** Turn off the offer to update to the latest version of Windows is set to Enabled
+- **MP.JL.CISW11INT.L1.094** Configure the transmission of the user's password in the content of MPR notifications sent by winlogon. is set to Disabled
+- **MP.JL.CISW11INT.L1.095** Sign-in and lock last interactive user automatically after a restart is set to Disabled
+- **MP.JL.CISW11INT.L1.096** Allow Basic authentication is set to Disabled
+- **MP.JL.CISW11INT.L1.097** Allow unencrypted traffic is set to Disabled
+- **MP.JL.CISW11INT.L1.098** Disallow Digest authentication is set to Enabled
+- **MP.JL.CISW11INT.L1.099** Allow Basic authentication is set to Disabled
+- **MP.JL.CISW11INT.L1.100** Allow unencrypted traffic is set to Disabled
+- **MP.JL.CISW11INT.L1.101** Disallow WinRM from storing RunAs credentials is set to Enabled
+- **MP.JL.CISW11INT.L1.102** Account Logon Audit Credential Validation is set to Success+ Failure
+- **MP.JL.CISW11INT.L1.103** Account Logon Logoff Audit Account Lockout is set to Failure or Success and Failure
+- **MP.JL.CISW11INT.L1.104** Account Logon Logoff Audit Group Membership is set to Success or Success and Failure
+- **MP.JL.CISW11INT.L1.105** Account Logon Logoff Audit Logoff is set to Success or Success and Failure
+- **MP.JL.CISW11INT.L1.106** Account Logon Logoff Audit Logon is set to Success+ Failure
+- **MP.JL.CISW11INT.L1.107** Account Management Audit Application Group Management is set to Success+ Failure
+- **MP.JL.CISW11INT.L1.108** Audit Authentication Policy Change is set to Success or Success and Failure
+- **MP.JL.CISW11INT.L1.109** Audit Authorization Policy Change is set to Success or Success and Failure
+- **MP.JL.CISW11INT.L1.110** Audit Changes to Audit Policy is set to Success or Success and Failure
+- **MP.JL.CISW11INT.L1.111** Audit File Share Access is set to Success+Failure
+- **MP.JL.CISW11INT.L1.112** Audit Other Logon Logoff Events is set to Success+Failure
+- **MP.JL.CISW11INT.L1.113** Audit Security Group Management is set to Success or Success and Failure
+- **MP.JL.CISW11INT.L1.114** Audit Security System Extension is set to Success or Success and Failure
+- **MP.JL.CISW11INT.L1.115** Audit Special Logon is set to Success or Success and Failure
+- **MP.JL.CISW11INT.L1.116** Audit User Account Management is set to Success+Failure
+- **MP.JL.CISW11INT.L1.117** Detailed Tracking Audit PNP Activity is set to Success or Success and Failure
+- **MP.JL.CISW11INT.L1.118** Detailed Tracking Audit Process Creation is set to Success or Success and Failure
+- **MP.JL.CISW11INT.L1.119** Object Access Audit Detailed File Share is set to Failure or Success and Failure
+- **MP.JL.CISW11INT.L1.120** Object Access Audit Other Object Access Events is set to Success+ Failure
+- **MP.JL.CISW11INT.L1.121** Object Access Audit Removable Storage is set to Success+ Failure
+- **MP.JL.CISW11INT.L1.122** Policy Change Audit MPSSVC Rule Level Policy Change is set to Success+ Failure
+- **MP.JL.CISW11INT.L1.123** Policy Change Audit Other Policy Change Events is set to Failure or Success and Failure
+- **MP.JL.CISW11INT.L1.124** Privilege Use Audit Sensitive Privilege Use is set to Success
+- **MP.JL.CISW11INT.L1.125** System Audit I Psec Driver is set to Success+ Failure
+- **MP.JL.CISW11INT.L1.126** System Audit Other System Events is set to Success+ Failure
+- **MP.JL.CISW11INT.L1.127** System Audit Security State Change is set to Success or Success and Failure
+- **MP.JL.CISW11INT.L1.128** System Audit System Integrity is set to Success+ Failure
+- **MP.JL.CISW11INT.L1.129** Refresh cadence is at most 90
+- **MP.JL.CISW11INT.L1.130** DO Download Mode is not set to HTTP blended with Internet peering
+- **MP.JL.CISW11INT.L1.131** Configure System Guard Launch is set to Unmanaged Enables Secure Launch if supported by hardware
+- **MP.JL.CISW11INT.L1.132** Credential Guard is set to (Enabled with UEFI lock) Turns on Credential Guard with UEFI lock.
+- **MP.JL.CISW11INT.L1.133** Enable Virtualization Based Security is set to enable virtualization based security.
+- **MP.JL.CISW11INT.L1.134** Require Platform Security Features is set to Turns on VBS with Secure Boot, with or without DMA
+- **MP.JL.CISW11INT.L1.135** Allow Cortana is set to Block
+- **MP.JL.CISW11INT.L1.136** Allow Spotlight Collection (User) is set to 0
+- **MP.JL.CISW11INT.L1.137** Disable Consumer Account State Content is set to Enabled.
+- **MP.JL.CISW11INT.L1.138** Do Not Show Feedback Notifications is set to Feedback notifications are disabled.
+- **MP.JL.CISW11INT.L1.139** Enable Domain Network Firewall is set to True
+- **MP.JL.CISW11INT.L1.140** Enable Domain Network Firewall: Default Inbound Action for Domain Profile is set to True: Block
+- **MP.JL.CISW11INT.L1.141** Enable Domain Network Firewall: Disable Inbound Notifications is set to True: True
+- **MP.JL.CISW11INT.L1.142** Enable Domain Network Firewall: Enable Log Dropped Packets is set to True: Enable Logging Of Dropped Packets
+- **MP.JL.CISW11INT.L1.143** Enable Domain Network Firewall: Enable Log Success Connections is set to True: Enable Logging Of Successful Connections
+- **MP.JL.CISW11INT.L1.144** Enable Domain Network Firewall: Log File Path is set to True: %SystemRoot%\System32\logfiles\firewall\domainfw.log
+- **MP.JL.CISW11INT.L1.145** Enable Domain Network Firewall: Log Max File Size is set to True: 16,384 KB or more
+- **MP.JL.CISW11INT.L1.146** Enable Private Network Firewall is set to True
+- **MP.JL.CISW11INT.L1.147** Enable Private Network Firewall: Default Inbound Action for Private Profile is set to True: Block
+- **MP.JL.CISW11INT.L1.148** Enable Private Network Firewall: Disable Inbound Notifications is set to True: True
+- **MP.JL.CISW11INT.L1.149** Enable Private Network Firewall: Enable Log Success Connections is set to True: Enable Logging Of Successful Connections
+- **MP.JL.CISW11INT.L1.150** Enable Private Network Firewall: Enable Log Dropped Packets is set to True: Enable Logging Of Dropped Packets
+- **MP.JL.CISW11INT.L1.151** Enable Private Network Firewall: Log File Path is set to True: %SystemRoot%\System32\logfiles\firewall\privatefw.log
+- **MP.JL.CISW11INT.L1.152** Enable Private Network Firewall: Log Max File Size is set to True: 16,384 KB or more
+- **MP.JL.CISW11INT.L1.153** Enable Public Network Firewall is set to True
+- **MP.JL.CISW11INT.L1.154** Enable Public Network Firewall: Allow Local Ipsec Policy Merge is set to True: False
+- **MP.JL.CISW11INT.L1.155** Enable Public Network Firewall: Allow Local Policy Merge is set to True: False
+- **MP.JL.CISW11INT.L1.156** Enable Public Network Firewall: Default Inbound Action for Public Profile is set to True: Block
+- **MP.JL.CISW11INT.L1.157** Enable Public Network Firewall: Disable Inbound Notifications is set to True: True
+- **MP.JL.CISW11INT.L1.158** Enable Public Network Firewall: Enable Log Dropped Packets is set to True: Enable Logging Of Dropped Packets
+- **MP.JL.CISW11INT.L1.159** Enable Public Network Firewall: Enable Log Success Connections is set to True: Enable Logging Of Successful Connections
+- **MP.JL.CISW11INT.L1.160** Enable Public Network Firewall: Log File Path is set to True: %SystemRoot%\System32\logfiles\firewall\publicfw.log
+- **MP.JL.CISW11INT.L1.161** Enable Public Network Firewall: Log Max File Size is set to True: 16,384 KB or more
+- **MP.JL.CISW11INT.L1.162** Audit Client Does Not Support Encryption is set to Enabled
+- **MP.JL.CISW11INT.L1.163** Audit Client Does Not Support Signing is set to Enabled
+- **MP.JL.CISW11INT.L1.164** Audit Insecure Guest Logon is set to Enabled
+- **MP.JL.CISW11INT.L1.165** Auth Rate Limiter Delay In Ms is at least 2000
+- **MP.JL.CISW11INT.L1.166** Enable Auth Rate Limiter is set to Enabled
+- **MP.JL.CISW11INT.L1.167** Enable Mailslots is set to Disabled
+- **MP.JL.CISW11INT.L1.168** Min Smb2 Dialect is set to SMB 3.1.1
+- **MP.JL.CISW11INT.L1.169** Audit Insecure Guest Logon is set to Enabled
+- **MP.JL.CISW11INT.L1.170** Audit Server Does Not Support Encryption is set to Enabled
+- **MP.JL.CISW11INT.L1.171** Audit Server Does Not Support Signing is set to Enabled
+- **MP.JL.CISW11INT.L1.172** Enable Insecure Guest Logons is set to Disabled
+- **MP.JL.CISW11INT.L1.173** Enable Mailslots is set to Disabled
+- **MP.JL.CISW11INT.L1.174** Min Smb2 Dialect is set to SMB 3.1.1
+- **MP.JL.CISW11INT.L1.175** Require Encryption is set to Enabled
+- **MP.JL.CISW11INT.L1.176** Accounts Enable Guest Account Status is set to Disable
+- **MP.JL.CISW11INT.L1.177** Accounts Limit Local Account Use Of Blank Passwords To Console Logon Only is set to Enabled
+- **MP.JL.CISW11INT.L1.178** Accounts Rename Administrator Account is not Administrator
+- **MP.JL.CISW11INT.L1.179** Accounts Rename Guest Account is not Guest
+- **MP.JL.CISW11INT.L1.180** Interactive Logon Do Not Display Last Signed In is set to Enabled (username will not be shown)
+- **MP.JL.CISW11INT.L1.181** Interactive Logon Machine Inactivity Limit is set to 1 to 900 seconds
+- **MP.JL.CISW11INT.L1.182** Interactive Logon Message Title For Users Attempting To Log On is configured
+- **MP.JL.CISW11INT.L1.183** Interactive Logon Message Text For Users Attempting To Log On is configured
+- **MP.JL.CISW11INT.L1.184** Interactive Logon Smart Card Removal Behavior is set to Lock Workstation, Force Logoff or Disconnect Remote Desktop Session
+- **MP.JL.CISW11INT.L1.185** Microsoft Network Client Digitally Sign Communications Always is set to Enable
+- **MP.JL.CISW11INT.L1.186** Microsoft Network Client Send Unencrypted Password To Third Party SMB Servers is set to Disable
+- **MP.JL.CISW11INT.L1.187** Microsoft Network Server Digitally Sign Communications Always is set to Enable
+- **MP.JL.CISW11INT.L1.188** Network Access Do Not Allow Anonymous Enumeration Of SAM Accounts is set to Enabled
+- **MP.JL.CISW11INT.L1.189** Network Access Do Not Allow Anonymous Enumeration Of Sam Accounts And Shares is set to Enabled
+- **MP.JL.CISW11INT.L1.190** Network Access Restrict Anonymous Access To Named Pipes And Shares is set to Enable
+- **MP.JL.CISW11INT.L1.191** Network Access Restrict Clients Allowed To Make Remote Calls To SAM is set to O:BAG:BAD:(A;;RC;;;BA)
+- **MP.JL.CISW11INT.L1.192** Network Security Allow Local System To Use Computer Identity For NTLM is set to Allow
+- **MP.JL.CISW11INT.L1.193** Network Security Allow PKU2U Authentication Requests is set to Block
+- **MP.JL.CISW11INT.L1.194** Network Security LAN Manager Authentication Level is set to Send LM and NTLMv2 responses only. Refuse LM and NTLM
+- **MP.JL.CISW11INT.L1.195** Network Security Minimum Session Security For NTLMSSP Based Clients is set to Require NTLM and 128-bit encryption
+- **MP.JL.CISW11INT.L1.196** Network Security Minimum Session Security For NTLMSSP Based Servers is set to Require NTLM and 128-bit encryption
+- **MP.JL.CISW11INT.L1.197** Network Security Restrict NTLM Audit Incoming NTLM Traffic is set to Enable auditing for all accounts
+- **MP.JL.CISW11INT.L1.198** User Account Control Behavior Of The Elevation Prompt For Administrators is set to Prompt for consent or credentials on the secure desktop
+- **MP.JL.CISW11INT.L1.199** User Account Control Behavior Of The Elevation Prompt For Standard Users is set to Automatically deny elevation requests
+- **MP.JL.CISW11INT.L1.200** User Account Control Detect Application Installations And Prompt For Elevation is set to Enable
+- **MP.JL.CISW11INT.L1.201** User Account Control Only Elevate UI Access Applications That Are Installed In Secure Locations is set to Enabled: Application runs with UIAccess integrity only if it resides in secure location.
+- **MP.JL.CISW11INT.L1.202** User Account Control Use Admin Approval Mode is set to Enable
+- **MP.JL.CISW11INT.L1.203** User Account Control Switch To The Secure Desktop When Prompting For Elevation is set to Enabled
+- **MP.JL.CISW11INT.L1.204** User Account Control Run All Administrators In Admin Approval Mode is set to Enabled
+- **MP.JL.CISW11INT.L1.205** User Account Control Virtualize File And Registry Write Failures To Per User Locations is set to Enabled
+- **MP.JL.CISW11INT.L1.206** Configure Lsa Protected Process is set to Enabled with UEFI lock. LSA will run as protected process and this configuration is UEFI locked.
+- **MP.JL.CISW11INT.L1.207** Allow apps from the Microsoft app store to auto update is set to Allowed.
+- **MP.JL.CISW11INT.L1.208** Allow Game DVR is set to Block
+- **MP.JL.CISW11INT.L1.209** Block Non Admin User Install is set to Allow
+- **MP.JL.CISW11INT.L1.210** MSI Allow User Control Over Install is set to Disabled
+- **MP.JL.CISW11INT.L1.211** MSI Always Install With Elevated Privileges is set to Disabled
+- **MP.JL.CISW11INT.L1.212** Allow Input Personalization is set to Block
+- **MP.JL.CISW11INT.L1.213** Let Apps Activate With Voice Above Lock is set to Force deny. Windows apps cannot be activated by voice while the screen is locked, and users cannot change it.
+- **MP.JL.CISW11INT.L1.214** Allow Indexing Encrypted Stores Or Items is set to Block
+- **MP.JL.CISW11INT.L1.215** Allow Search To Use Location is set to Block
+- **MP.JL.CISW11INT.L1.216** Notify Malicious is set to Enabled
+- **MP.JL.CISW11INT.L1.217** Notify Password Reuse is set to Enabled
+- **MP.JL.CISW11INT.L1.218** Notify Unsafe App is set to Enabled
+- **MP.JL.CISW11INT.L1.219** Service Enabled is set to Enabled
+- **MP.JL.CISW11INT.L1.220** Enable Sudo is set to Sudo is disabled.
+- **MP.JL.CISW11INT.L1.221** Allow Telemetry is set to Basic
+- **MP.JL.CISW11INT.L1.222** Enable One Settings Auditing is set to Enabled.
+- **MP.JL.CISW11INT.L1.223** Access Credential Manager As Trusted Caller is set to (<![CDATA[]]>)
+- **MP.JL.CISW11INT.L1.224** Access From Network is set to *S-1-5-32-544, *S-1-5-32-555
+- **MP.JL.CISW11INT.L1.225** Act As Part Of The Operating System is set to (<![CDATA[]]>)
+- **MP.JL.CISW11INT.L1.226** Allow Local Log On is set to *S-1-5-32-544, *S-1-5-32-545
+- **MP.JL.CISW11INT.L1.227** Backup Files And Directories is set to *S-1-5-32-544
+- **MP.JL.CISW11INT.L1.228** Change System Time is set to *S-1-5-32-544, *S-1-5-19
+- **MP.JL.CISW11INT.L1.229** Create Global Objects is set to *S-1-5-32-544, *S-1-5-19, *S-1-5-20, *S-1-5-6
+- **MP.JL.CISW11INT.L1.230** Create Page File is set to *S-1-5-32-544
+- **MP.JL.CISW11INT.L1.231** Create Permanent Shared Objects is set to (<![CDATA[]]>)
+- **MP.JL.CISW11INT.L1.232** Create Symbolic Links is set to *S-1-5-32-544
+- **MP.JL.CISW11INT.L1.233** Create Token is set to (<![CDATA[]]>)
+- **MP.JL.CISW11INT.L1.234** Debug Programs is set to *S-1-5-32-544
+- **MP.JL.CISW11INT.L1.235** Deny Access From Network includes Guests, Local account
+- **MP.JL.CISW11INT.L1.236** Deny Local Log On includes Guests
+- **MP.JL.CISW11INT.L1.237** Deny Log On As Batch Job includes Guests
+- **MP.JL.CISW11INT.L1.238** Deny Log On As Service includes Guests
+- **MP.JL.CISW11INT.L1.239** Deny Remote Desktop Services Log On includes Guests, Local account
+- **MP.JL.CISW11INT.L1.240** Enable Delegation is set to (<![CDATA[]]>)
+- **MP.JL.CISW11INT.L1.241** Generate Security Audits is set to *S-1-5-19, *S-1-5-20, *S-1-5-99
+- **MP.JL.CISW11INT.L1.242** Impersonate Client is set to *S-1-5-32-544, *S-1-5-19, *S-1-5-20, *S-1-5-6, *S-1-5-99
+- **MP.JL.CISW11INT.L1.243** Increase Scheduling Priority is set to *S-1-5-32-544, *S-1-5-90-0
+- **MP.JL.CISW11INT.L1.244** Load Unload Device Drivers is set to *S-1-5-32-544
+- **MP.JL.CISW11INT.L1.245** Lock Memory is set to (<![CDATA[]]>)
+- **MP.JL.CISW11INT.L1.246** Manage Auditing And Security Log is set to *S-1-5-32-544
+- **MP.JL.CISW11INT.L1.247** Manage Volume is set to *S-1-5-32-544
+- **MP.JL.CISW11INT.L1.248** Modify Firmware Environment is set to *S-1-5-32-544
+- **MP.JL.CISW11INT.L1.249** Modify Object Label is set to (<![CDATA[]]>)
+- **MP.JL.CISW11INT.L1.250** Profile Single Process is set to *S-1-5-32-544
+- **MP.JL.CISW11INT.L1.251** Profile System Performance is set to *S-1-5-32-544, *S-1-5-80
+- **MP.JL.CISW11INT.L1.252** Remote Shutdown is set to *S-1-5-32-544
+- **MP.JL.CISW11INT.L1.253** Replace Process Level Token is set to *S-1-5-19, *S-1-5-20
+- **MP.JL.CISW11INT.L1.254** Restore Files And Directories is set to *S-1-5-32-544
+- **MP.JL.CISW11INT.L1.255** Shut Down The System is set to *S-1-5-32-544, *S-1-5-32-545
+- **MP.JL.CISW11INT.L1.256** Take Ownership is set to *S-1-5-32-544
+- **MP.JL.CISW11INT.L1.257** Hypervisor Enforced Code Integrity is set to (Enabled with UEFI lock) Turns on Hypervisor-Protected Code Integrity with UEFI lock.
+- **MP.JL.CISW11INT.L1.258** Require UEFI Memory Attributes Table is set to Require UEFI Memory Attributes Table
+- **MP.JL.CISW11INT.L1.259** Allow Auto Connect To Wi Fi Sense Hotspots is set to Block
+- **MP.JL.CISW11INT.L1.260** Enable ESS with Supported Peripherals is set to Enhanced sign-in security will be enabled on systems with capable software and hardware, following the existing default behavior in Windows. For systems with one secure modality (face or fingerprint) and one insecure modality (fingerprint or face), only the secure sensor can be used for sign-in and the insecure sensor(s) will be blocked. This includes peripheral devices, which are unsupported and will be unusable. (default and recommended for highest security)
+- **MP.JL.CISW11INT.L1.261** Facial Features Use Enhanced Anti Spoofing is set to true
+- **MP.JL.CISW11INT.L1.262** Minimum PIN Length is set to 6
+- **MP.JL.CISW11INT.L1.263** Require Security Device is set to true
+- **MP.JL.CISW11INT.L1.264** Allow Windows Ink Workspace is set to Disabled, or enabled but not above the lock screen
+- **MP.JL.CISW11INT.L1.265** Allow Clipboard Redirection is set to Not allowed.
+- **MP.JL.CISW11INT.L1.266** Allow Networking is set to Not allowed.
+- **MP.JL.CISW11INT.L1.267** Allow Auto Update is not set to Turn off automatic updates
+- **MP.JL.CISW11INT.L1.268** Defer Feature Updates Period In Days is at least 180
+- **MP.JL.CISW11INT.L1.269** Manage Preview Builds is set to Disable Preview builds
+- **MP.JL.CISW11INT.L1.270** Scheduled Install Day is set to Every day
+- **MP.JL.CISW11INT.L1.271** Block "Pause Updates" ability is set to Block
+- **MP.JL.CISW11INT.L1.272** Require Pin For Pairing is set to Pairing ceremony for new devices will always require a PIN
+- **MP.JL.CISW11INT.L1.273** Backup Directory is set to Backup the password to Microsoft Entra ID only
+- **MP.JL.CISW11INT.L1.274** Password Age Days is at most 30
+- **MP.JL.CISW11INT.L1.275** Password Complexity is set to Large letters + small letters + numbers + special characters or stronger
+- **MP.JL.CISW11INT.L1.276** Password Length is at least 15
+- **MP.JL.CISW11INT.L1.277** Post Authentication Actions is set to Reset the password and logoff, or reset and reboot
+- **MP.JL.CISW11INT.L1.278** Post Authentication Reset Delay is set to 1 to 8 hours
+- **MP.JL.CISW11INT.L1.279** Computer Browser (Browser) is set to Disabled or Not Installed
+- **MP.JL.CISW11INT.L1.280** IIS Admin Service (IISADMIN) is set to Disabled or Not Installed
+- **MP.JL.CISW11INT.L1.281** Infrared monitor service (irmon) is set to Disabled or Not Installed
+- **MP.JL.CISW11INT.L1.282** LxssManager (LxssManager) is set to Disabled or Not Installed
+- **MP.JL.CISW11INT.L1.283** Microsoft FTP Service (FTPSVC) is set to Disabled or Not Installed
+- **MP.JL.CISW11INT.L1.284** OpenSSH SSH Server (sshd) is set to Disabled or Not Installed
+- **MP.JL.CISW11INT.L1.285** Remote Procedure Call (RPC) Locator (RpcLocator) is set to Disabled
+- **MP.JL.CISW11INT.L1.286** Routing and Remote Access (RemoteAccess) is set to Disabled
+- **MP.JL.CISW11INT.L1.287** Simple TCP/IP Services (simptcp) is set to Disabled or Not Installed
+- **MP.JL.CISW11INT.L1.288** Special Administration Console Helper (sacsvr) is set to Disabled or Not Installed
+- **MP.JL.CISW11INT.L1.289** SSDP Discovery (SSDPSRV) is set to Disabled
+- **MP.JL.CISW11INT.L1.290** UPnP Device Host (upnphost) is set to Disabled
+- **MP.JL.CISW11INT.L1.291** Web Management Service (WMSvc) is set to Disabled or Not Installed
+- **MP.JL.CISW11INT.L1.292** Windows Media Player Network Sharing Service (WMPNetworkSvc) is set to Disabled or Not Installed
+- **MP.JL.CISW11INT.L1.293** Windows Mobile Hotspot Service (icssvc) is set to Disabled
+- **MP.JL.CISW11INT.L1.294** World Wide Web Publishing Service (W3SVC) is set to Disabled or Not Installed
+- **MP.JL.CISW11INT.L1.295** Xbox Accessory Management Service (XboxGipSvc) is set to Disabled
+- **MP.JL.CISW11INT.L1.296** Xbox Live Auth Manager (XblAuthManager) is set to Disabled
+- **MP.JL.CISW11INT.L1.297** Xbox Live Game Save (XblGameSave) is set to Disabled
+- **MP.JL.CISW11INT.L1.298** Xbox Live Networking Service (XboxNetApiSvc) is set to Disabled
+- **MP.JL.CISW11INT.L1.299** Prevent enabling lock screen slide show is set to Enabled
+- **MP.JL.CISW11INT.L1.300** Config refresh is set to Enabled.
+- **MP.JL.CISW11INT.L1.301** Require BitLocker is set to Require
+- **MP.JL.CISW11INT.L1.302** Require Secure Boot to be enabled on the device is set to Require
+- **MP.JL.CISW11INT.L1.303** Require code integrity is set to Require
+- **MP.JL.CISW11INT.L1.304** Firewall is set to Require
+- **MP.JL.CISW11INT.L1.305** Trusted Platform Module (TPM) is set to Require
+- **MP.JL.CISW11INT.L1.306** Antivirus is set to Require
+- **MP.JL.CISW11INT.L1.307** Antispyware is set to Require

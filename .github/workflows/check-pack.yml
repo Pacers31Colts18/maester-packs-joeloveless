@@ -1,0 +1,78 @@
+# Checks every pack on each push and pull request (tools/Test-Pack.ps1: helpers in sync, Test-MtPack valid with Low
+# risk and no findings, every test valid and runnable) and runs the Pester tests of the helpers. After a push to main
+# passes, the release job publishes each pack whose manifest version has no release yet, tagged <folder>-v<Version>.
+# The release job runs only when the repository variable PACK_RELEASES is true.
+name: Check packs
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Check out JLMaesterTools
+        uses: actions/checkout@v5
+        with:
+          repository: Pacers31Colts18/maester-pack-tools-joeloveless
+          path: .jlmaestertools
+
+      - name: Install Maester and Pester
+        shell: pwsh
+        run: |
+          # Maester 3.0 is in preview until it is released; -Prerelease gets the newest one.
+          Install-PSResource -Name Maester -Prerelease -TrustRepository -Quiet
+          Install-PSResource -Name Pester -TrustRepository -Quiet
+
+      - name: Check the packs
+        shell: pwsh
+        env:
+          JLMAESTERTOOLS_PATH: ${{ github.workspace }}/.jlmaestertools/JLMaesterTools/JLMaesterTools.psd1
+        run: ./tools/Test-Pack.ps1
+
+      - name: Pester tests of the helpers
+        shell: pwsh
+        run: |
+          $r = Invoke-Pester ./tests -PassThru -Output Detailed
+          if ($r.FailedCount -gt 0 -or $r.TotalCount -eq 0) { exit 1 }
+
+  release:
+    needs: check
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && vars.PACK_RELEASES == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    concurrency:
+      group: release
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Publish new pack versions
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          foreach ($pack in @(Get-ChildItem -Directory | Where-Object { Test-Path (Join-Path $_.FullName 'maester-pack.json') })) {
+            $version = [string](Get-Content -LiteralPath (Join-Path $pack.FullName 'maester-pack.json') -Raw | ConvertFrom-Json).Version
+            if ($version -notmatch '^\d+\.\d+\.\d+$') { throw "$($pack.Name): Version '$version' is not major.minor.patch." }
+            $tag = "$($pack.Name)-v$version"
+            gh release view $tag --json tagName 2>$null | Out-Null
+            if ($LASTEXITCODE -eq 0) { Write-Output "$tag exists."; $global:LASTEXITCODE = 0; continue }
+            $global:LASTEXITCODE = 0
+            $log = Get-Content -LiteralPath CHANGELOG.md -Raw
+            $section = [regex]::Match($log, '(?ms)^## ' + [regex]::Escape("$($pack.Name) $version") + '[ \t]*\r?\n(.*?)(?=^## |\z)')
+            if (-not ($section.Success -and $section.Groups[1].Value.Trim())) { throw "CHANGELOG.md has no '## $($pack.Name) $version' section." }
+            $notesFile = Join-Path $env:RUNNER_TEMP "$tag.md"
+            [System.IO.File]::WriteAllText($notesFile, $section.Groups[1].Value.Trim() + "`n")
+            gh release create $tag --target (git rev-parse HEAD) --title $tag --notes-file $notesFile --latest
+            if ($LASTEXITCODE -ne 0) { throw "Could not publish $tag." }
+            "Published **$tag**." >> $env:GITHUB_STEP_SUMMARY
+          }

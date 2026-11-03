@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Maester itself
+    url: https://github.com/maester365/maester/issues
+    about: Problems with Maester, not with a test in these packs.
