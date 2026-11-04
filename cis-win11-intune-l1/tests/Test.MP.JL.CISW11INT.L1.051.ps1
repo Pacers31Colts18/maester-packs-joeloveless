@@ -6,7 +6,7 @@ function Test-JLPowerRequirepasswordwhencomputerwakespluggedin {
         Feature      = 'CIS Microsoft Intune for Windows 11 Benchmark (L1)',
         Area         = 'Sleep Settings',
         ResourceType = 'Policy',
-        Severity     = 'High',
+        Severity     = 'Medium',
         Control      = 'cis-intune-win11-l1:4.10.29.5.2',
         Service      = 'Graph',
         License      = 'INTUNE_A',

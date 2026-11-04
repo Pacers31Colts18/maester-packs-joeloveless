@@ -6,7 +6,7 @@ function Test-JLAdmxWindowsexplorerShellprotocolprotectedmodetitle2 {
         Feature      = 'CIS Microsoft Intune for Windows 11 Benchmark (L1)',
         Area         = 'File Explorer',
         ResourceType = 'Policy',
-        Severity     = 'High',
+        Severity     = 'Medium',
         Control      = 'cis-intune-win11-l1:4.11.18.4',
         Service      = 'Graph',
         License      = 'INTUNE_A',

@@ -6,7 +6,7 @@ function Test-JLLxssManagerLxssManager {
         Feature      = 'CIS Microsoft Intune for Windows 11 Benchmark (L1)',
         Area         = 'System Services',
         ResourceType = 'Policy',
-        Severity     = 'Medium',
+        Severity     = 'Info',
         Control      = 'cis-intune-win11-l1:82.10',
         Service      = 'Graph',
         License      = 'INTUNE_A',

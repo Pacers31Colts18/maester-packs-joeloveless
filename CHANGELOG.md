@@ -1,5 +1,11 @@
 # Changelog
 
+## cis-win11-intune-l1 0.1.2
+
+- Severity is Medium for most tests; High for Firewall, LAPS, Device Guard and Windows Hello for Business; Info for System Services.
+- User Rights tests MP.JL.CISW11INT.L1.235 to 239 name the accounts by SID, like the other User Rights tests.
+- The User Rights descriptions show SIDs such as `*S-1-5-32-544` correctly instead of breaking the bold text.
+
 ## cis-win11-intune-l1 0.1.1
 
 - Adds the pack banner.

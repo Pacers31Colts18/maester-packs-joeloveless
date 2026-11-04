@@ -6,7 +6,7 @@ function Test-JLInternetexplorerDisableenclosuredownloading {
         Feature      = 'CIS Microsoft Intune for Windows 11 Benchmark (L1)',
         Area         = 'RSS Feeds',
         ResourceType = 'Policy',
-        Severity     = 'High',
+        Severity     = 'Medium',
         Control      = 'cis-intune-win11-l1:4.11.36.1',
         Service      = 'Graph',
         License      = 'INTUNE_A',

@@ -6,7 +6,7 @@ function Test-JLLocalsecurityauthorityConfigurelsaprotectedprocess {
         Feature      = 'CIS Microsoft Intune for Windows 11 Benchmark (L1)',
         Area         = 'Local Security Authority',
         ResourceType = 'Policy',
-        Severity     = 'High',
+        Severity     = 'Medium',
         Control      = 'cis-intune-win11-l1:50.1',
         Service      = 'Graph',
         License      = 'INTUNE_A',

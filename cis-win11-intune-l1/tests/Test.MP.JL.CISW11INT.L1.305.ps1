@@ -6,7 +6,7 @@ function Test-JLWindows10CompliancePolicyTpmRequired {
         Feature      = 'CIS Microsoft Intune for Windows 11 Benchmark (L1)',
         Area         = 'Device Compliance - System Security',
         ResourceType = 'Policy',
-        Severity     = 'High',
+        Severity     = 'Medium',
         Control      = 'cis-intune-win11-l1:106.2.1.2',
         Service      = 'Graph',
         License      = 'INTUNE_A',

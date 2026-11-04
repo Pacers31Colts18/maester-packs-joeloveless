@@ -6,7 +6,7 @@ function Test-JLRemotemanagementDisallowstoringofrunascredentials {
         Feature      = 'CIS Microsoft Intune for Windows 11 Benchmark (L1)',
         Area         = 'Win RM Service',
         ResourceType = 'Policy',
-        Severity     = 'High',
+        Severity     = 'Medium',
         Control      = 'cis-intune-win11-l1:4.11.54.2.4',
         Service      = 'Graph',
         License      = 'INTUNE_A',

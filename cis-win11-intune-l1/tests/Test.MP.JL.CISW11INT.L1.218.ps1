@@ -6,7 +6,7 @@ function Test-JLWebthreatdefenseNotifyunsafeapp {
         Feature      = 'CIS Microsoft Intune for Windows 11 Benchmark (L1)',
         Area         = 'Enhanced Phishing Protection',
         ResourceType = 'Policy',
-        Severity     = 'High',
+        Severity     = 'Medium',
         Control      = 'cis-intune-win11-l1:77.1.3',
         Service      = 'Graph',
         License      = 'INTUNE_A',

@@ -6,7 +6,7 @@ function Test-JLRemotedesktopservicesDonotallowpasswordsaving {
         Feature      = 'CIS Microsoft Intune for Windows 11 Benchmark (L1)',
         Area         = 'Remote Desktop Connection Client',
         ResourceType = 'Policy',
-        Severity     = 'High',
+        Severity     = 'Medium',
         Control      = 'cis-intune-win11-l1:4.11.35.3.2',
         Service      = 'Graph',
         License      = 'INTUNE_A',

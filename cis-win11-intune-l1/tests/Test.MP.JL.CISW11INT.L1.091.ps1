@@ -6,7 +6,7 @@ function Test-JLAdmxTerminalserverTsTempDelete {
         Feature      = 'CIS Microsoft Intune for Windows 11 Benchmark (L1)',
         Area         = 'Temporary folders',
         ResourceType = 'Policy',
-        Severity     = 'High',
+        Severity     = 'Medium',
         Control      = 'cis-intune-win11-l1:4.11.35.4.11.1',
         Service      = 'Graph',
         License      = 'INTUNE_A',

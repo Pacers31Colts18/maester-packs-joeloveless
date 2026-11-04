@@ -6,7 +6,7 @@ function Test-JLWindowsconnectionmanagerProhitconnectiontonondomainnetworkswhenc
         Feature      = 'CIS Microsoft Intune for Windows 11 Benchmark (L1)',
         Area         = 'Windows Connection Manager',
         ResourceType = 'Policy',
-        Severity     = 'High',
+        Severity     = 'Medium',
         Control      = 'cis-intune-win11-l1:4.6.18.2',
         Service      = 'Graph',
         License      = 'INTUNE_A',

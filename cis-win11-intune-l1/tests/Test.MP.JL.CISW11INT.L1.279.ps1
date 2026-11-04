@@ -6,7 +6,7 @@ function Test-JLComputerBrowserBrowser {
         Feature      = 'CIS Microsoft Intune for Windows 11 Benchmark (L1)',
         Area         = 'System Services',
         ResourceType = 'Policy',
-        Severity     = 'Medium',
+        Severity     = 'Info',
         Control      = 'cis-intune-win11-l1:82.3',
         Service      = 'Graph',
         License      = 'INTUNE_A',

@@ -6,7 +6,7 @@ function Test-JLApplicationmanagementMsiallowusercontroloverinstall {
         Feature      = 'CIS Microsoft Intune for Windows 11 Benchmark (L1)',
         Area         = 'Microsoft App Store',
         ResourceType = 'Policy',
-        Severity     = 'High',
+        Severity     = 'Medium',
         Control      = 'cis-intune-win11-l1:55.6',
         Service      = 'Graph',
         License      = 'INTUNE_A',

@@ -6,7 +6,7 @@ function Test-JLWindows10CompliancePolicyBitLockerEnabled {
         Feature      = 'CIS Microsoft Intune for Windows 11 Benchmark (L1)',
         Area         = 'Device Compliance - Device Health',
         ResourceType = 'Policy',
-        Severity     = 'High',
+        Severity     = 'Medium',
         Control      = 'cis-intune-win11-l1:106.1.1',
         Service      = 'Graph',
         License      = 'INTUNE_A',

@@ -6,7 +6,7 @@ function Test-JLUserAttachmentmanagerNotifyantivirusprograms {
         Feature      = 'CIS Microsoft Intune for Windows 11 Benchmark (L1)',
         Area         = 'Attachment Manager',
         ResourceType = 'Policy',
-        Severity     = 'High',
+        Severity     = 'Medium',
         Control      = 'cis-intune-win11-l1:4.11.5.2',
         Service      = 'Graph',
         License      = 'INTUNE_A',

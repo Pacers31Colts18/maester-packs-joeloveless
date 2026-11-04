@@ -1,12 +1,12 @@
 function Test-JLUserrightsDenylogonasservice {
     [MaesterTest(
         Id           = 'MP.JL.CISW11INT.L1.238',
-        Title        = 'Deny Log On As Service includes Guests',
+        Title        = 'Deny Log On As Service includes *S-1-5-32-546',
         Product      = 'Intune',
         Feature      = 'CIS Microsoft Intune for Windows 11 Benchmark (L1)',
         Area         = 'User Rights',
         ResourceType = 'Policy',
-        Severity     = 'High',
+        Severity     = 'Medium',
         Control      = 'cis-intune-win11-l1:90.16',
         Service      = 'Graph',
         License      = 'INTUNE_A',

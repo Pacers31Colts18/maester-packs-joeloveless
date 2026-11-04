@@ -6,7 +6,7 @@ function Test-JLPrintersConfigurerpcconnectionpolicyRpcconnectionauthenticationE
         Feature      = 'CIS Microsoft Intune for Windows 11 Benchmark (L1)',
         Area         = 'Printers',
         ResourceType = 'Policy',
-        Severity     = 'High',
+        Severity     = 'Medium',
         Control      = 'cis-intune-win11-l1:4.7.4',
         Service      = 'Graph',
         License      = 'INTUNE_A',

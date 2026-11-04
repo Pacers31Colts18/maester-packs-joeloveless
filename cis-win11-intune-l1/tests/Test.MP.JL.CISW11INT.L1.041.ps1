@@ -6,7 +6,7 @@ function Test-JLConnectivityDisableinternetdownloadforwebpublishingandonlineorde
         Feature      = 'CIS Microsoft Intune for Windows 11 Benchmark (L1)',
         Area         = 'Internet Communication settings',
         ResourceType = 'Policy',
-        Severity     = 'High',
+        Severity     = 'Medium',
         Control      = 'cis-intune-win11-l1:4.10.20.1.5',
         Service      = 'Graph',
         License      = 'INTUNE_A',

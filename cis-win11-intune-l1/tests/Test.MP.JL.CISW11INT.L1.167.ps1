@@ -6,7 +6,7 @@ function Test-JLLanmanserverEnablemailslots {
         Feature      = 'CIS Microsoft Intune for Windows 11 Benchmark (L1)',
         Area         = 'Lanman Server',
         ResourceType = 'Policy',
-        Severity     = 'High',
+        Severity     = 'Medium',
         Control      = 'cis-intune-win11-l1:45.6',
         Service      = 'Graph',
         License      = 'INTUNE_A',

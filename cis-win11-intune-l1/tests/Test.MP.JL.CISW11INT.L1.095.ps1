@@ -6,7 +6,7 @@ function Test-JLWindowslogonAllowautomaticrestartsignon {
         Feature      = 'CIS Microsoft Intune for Windows 11 Benchmark (L1)',
         Area         = 'Windows Logon Options',
         ResourceType = 'Policy',
-        Severity     = 'High',
+        Severity     = 'Medium',
         Control      = 'cis-intune-win11-l1:4.11.49.2',
         Service      = 'Graph',
         License      = 'INTUNE_A',

@@ -1,12 +1,12 @@
 function Test-JLUserrightsDenylogonasbatchjob {
     [MaesterTest(
         Id           = 'MP.JL.CISW11INT.L1.237',
-        Title        = 'Deny Log On As Batch Job includes Guests',
+        Title        = 'Deny Log On As Batch Job includes *S-1-5-32-546',
         Product      = 'Intune',
         Feature      = 'CIS Microsoft Intune for Windows 11 Benchmark (L1)',
         Area         = 'User Rights',
         ResourceType = 'Policy',
-        Severity     = 'High',
+        Severity     = 'Medium',
         Control      = 'cis-intune-win11-l1:90.15',
         Service      = 'Graph',
         License      = 'INTUNE_A',

@@ -6,7 +6,7 @@ function Test-JLSystemBootstartdriverinitialization {
         Feature      = 'CIS Microsoft Intune for Windows 11 Benchmark (L1)',
         Area         = 'Early Launch Antimalware',
         ResourceType = 'Policy',
-        Severity     = 'High',
+        Severity     = 'Medium',
         Control      = 'cis-intune-win11-l1:4.10.13.1',
         Service      = 'Graph',
         License      = 'INTUNE_A',

@@ -6,7 +6,7 @@ function Test-JLAdmxNetworkconnectionsNcStddomainusersetlocation {
         Feature      = 'CIS Microsoft Intune for Windows 11 Benchmark (L1)',
         Area         = 'Network Connections',
         ResourceType = 'Policy',
-        Severity     = 'High',
+        Severity     = 'Medium',
         Control      = 'cis-intune-win11-l1:4.6.9.3',
         Service      = 'Graph',
         License      = 'INTUNE_A',

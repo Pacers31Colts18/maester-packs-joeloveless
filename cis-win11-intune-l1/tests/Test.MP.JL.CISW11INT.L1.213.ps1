@@ -6,7 +6,7 @@ function Test-JLPrivacyLetappsactivatewithvoiceabovelock {
         Feature      = 'CIS Microsoft Intune for Windows 11 Benchmark (L1)',
         Area         = 'Privacy',
         ResourceType = 'Policy',
-        Severity     = 'High',
+        Severity     = 'Medium',
         Control      = 'cis-intune-win11-l1:69.4',
         Service      = 'Graph',
         License      = 'INTUNE_A',

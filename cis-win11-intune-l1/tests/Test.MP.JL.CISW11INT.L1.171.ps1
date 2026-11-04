@@ -6,7 +6,7 @@ function Test-JLLanmanworkstationAuditserverdoesnotsupportsigning {
         Feature      = 'CIS Microsoft Intune for Windows 11 Benchmark (L1)',
         Area         = 'Lanman Workstation',
         ResourceType = 'Policy',
-        Severity     = 'High',
+        Severity     = 'Medium',
         Control      = 'cis-intune-win11-l1:46.3',
         Service      = 'Graph',
         License      = 'INTUNE_A',

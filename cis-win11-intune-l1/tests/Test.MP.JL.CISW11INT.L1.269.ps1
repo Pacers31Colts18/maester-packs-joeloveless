@@ -6,7 +6,7 @@ function Test-JLUpdateManagepreviewbuilds {
         Feature      = 'CIS Microsoft Intune for Windows 11 Benchmark (L1)',
         Area         = 'Windows Update For Business',
         ResourceType = 'Policy',
-        Severity     = 'High',
+        Severity     = 'Medium',
         Control      = 'cis-intune-win11-l1:104.3',
         Service      = 'Graph',
         License      = 'INTUNE_A',

@@ -1,12 +1,12 @@
 function Test-JLUserrightsDenyremotedesktopserviceslogon {
     [MaesterTest(
         Id           = 'MP.JL.CISW11INT.L1.239',
-        Title        = 'Deny Remote Desktop Services Log On includes Guests, Local account',
+        Title        = 'Deny Remote Desktop Services Log On includes *S-1-5-32-546, *S-1-5-113',
         Product      = 'Intune',
         Feature      = 'CIS Microsoft Intune for Windows 11 Benchmark (L1)',
         Area         = 'User Rights',
         ResourceType = 'Policy',
-        Severity     = 'High',
+        Severity     = 'Medium',
         Control      = 'cis-intune-win11-l1:90.17',
         Service      = 'Graph',
         License      = 'INTUNE_A',

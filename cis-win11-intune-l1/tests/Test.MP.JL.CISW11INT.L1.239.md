@@ -2,13 +2,13 @@
 
 CIS Microsoft Intune for Windows 11 Benchmark, recommendation 90.17 (Level 1).
 
-The test passes when an assigned settings catalog policy for Windows sets **User Rights > Deny Remote Desktop Services Log On** to a list that includes **Guests, Local account**, and no other assigned policy sets it to something else.
+The test passes when an assigned settings catalog policy for Windows sets **User Rights > Deny Remote Desktop Services Log On** to a list that includes **\*S-1-5-32-546, \*S-1-5-113**, and no other assigned policy sets it to something else.
 
 #### Remediation action
 
 1. In the [Microsoft Intune admin center](https://intune.microsoft.com), go to **Devices** > **Configuration** and open
    (or create) a settings catalog policy for Windows 10 and later.
-2. Add **User Rights** > **Deny Remote Desktop Services Log On** and set it to a list that includes **Guests, Local account**.
+2. Add **User Rights** > **Deny Remote Desktop Services Log On** and set it to a list that includes **\*S-1-5-32-546, \*S-1-5-113**.
 3. Assign the policy to your Windows devices, and remove any other assigned policy that sets it to something else.
 
 #### Related links
