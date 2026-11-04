@@ -18,6 +18,7 @@
     "helpers"
   ],
   "Guide": "maester-pack.guide.json",
+  "Banner": "assets/banner.png",
   "Uses": {
     "Services": [
       "Graph"
