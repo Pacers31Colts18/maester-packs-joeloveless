@@ -10,6 +10,8 @@ One pack per baseline profile, one test per setting. Every pack needs Maester 3.
 | CIS Windows 11 Intune L1 | [cis-win11-intune-l1](cis-win11-intune-l1/README.md) | `JL.CISW11INT.L1` | CIS Microsoft Intune for Windows 11 Benchmark v5.0.0, Level 1 |
 | CIS Windows 11 Intune BL | [cis-win11-intune-bl](cis-win11-intune-bl/README.md) | `JL.CISW11INT.BL` | CIS Microsoft Intune for Windows 11 Benchmark v5.0.0, BL |
 | CIS Windows 11 Intune BL | [cis-win11-intune-bl](cis-win11-intune-bl/README.md) | `JL.CISW11INT.BL` | CIS Microsoft Intune for Windows 11 Benchmark v5.0.0, BL |
+| CIS Apple MacOS 26 Tahoe Intune Benchmark | [cis-macos26-intune-l1](cis-macos26-intune-l1/README.md) | `JL.CISMACINT.L1` | CIS Apple MacOS 26 Tahoe Intune Benchark v1.0.0, Level 1 |
+| CIS Apple MacOS 26 Tahoe Intune Benchmark | [cis-macos-intune-l1](cis-macos-intune-l1/README.md) | `JL.CISMACINT.L1` | CIS Apple MacOS 26 Tahoe Intune Benchark v1.0.0, Level 1 |
 
 ## Install and run
 
