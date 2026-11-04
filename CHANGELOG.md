@@ -1,5 +1,9 @@
 # Changelog
 
+## cis-win11-intune-l1 0.1.3
+
+- Virtualization Based Technology tests (MP.JL.CISW11INT.L1.257 and 258) are High severity.
+
 ## cis-win11-intune-l1 0.1.2
 
 - Severity is Medium for most tests; High for Firewall, LAPS, Device Guard and Windows Hello for Business; Info for System Services.

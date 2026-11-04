@@ -324,8 +324,8 @@ The pack's Code and test IDs stay the same, so `Update-MtPack` moves everyone to
 | MP.JL.CISW11INT.L1.254 | 90.33 | Restore Files And Directories is set to *S-1-5-32-544 | Medium |
 | MP.JL.CISW11INT.L1.255 | 90.34 | Shut Down The System is set to *S-1-5-32-544, *S-1-5-32-545 | Medium |
 | MP.JL.CISW11INT.L1.256 | 90.35 | Take Ownership is set to *S-1-5-32-544 | Medium |
-| MP.JL.CISW11INT.L1.257 | 91.1 | Hypervisor Enforced Code Integrity is set to (Enabled with UEFI lock) Turns on Hypervisor-Protected Code Integrity with UEFI lock. | Medium |
-| MP.JL.CISW11INT.L1.258 | 91.2 | Require UEFI Memory Attributes Table is set to Require UEFI Memory Attributes Table | Medium |
+| MP.JL.CISW11INT.L1.257 | 91.1 | Hypervisor Enforced Code Integrity is set to (Enabled with UEFI lock) Turns on Hypervisor-Protected Code Integrity with UEFI lock. | High |
+| MP.JL.CISW11INT.L1.258 | 91.2 | Require UEFI Memory Attributes Table is set to Require UEFI Memory Attributes Table | High |
 | MP.JL.CISW11INT.L1.259 | 94.1 | Allow Auto Connect To Wi Fi Sense Hotspots is set to Block | Medium |
 | MP.JL.CISW11INT.L1.260 | 98.1 | Enable ESS with Supported Peripherals is set to Enhanced sign-in security will be enabled on systems with capable software and hardware, following the existing default behavior in Windows. For systems with one secure modality (face or fingerprint) and one insecure modality (fingerprint or face), only the secure sensor can be used for sign-in and the insecure sensor(s) will be blocked. This includes peripheral devices, which are unsupported and will be unusable. (default and recommended for highest security) | High |
 | MP.JL.CISW11INT.L1.261 | 98.2 | Facial Features Use Enhanced Anti Spoofing is set to true | High |
