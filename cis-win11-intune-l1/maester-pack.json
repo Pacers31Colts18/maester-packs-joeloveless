@@ -4,7 +4,7 @@
   "Guid": "1e9d812c-1f74-4060-8f0c-fb1a19dbdc1d",
   "Name": "CIS Windows 11 Intune L1",
   "Description": "Checks that Intune policies configure the Level 1 recommendations of the CIS Microsoft Intune for Windows 11 Benchmark v5.0.0. One test per setting.",
-  "Version": "0.1.2",
+  "Version": "0.1.3",
   "Publisher": "pacers31colts18",
   "License": "MIT",
   "Homepage": "https://github.com/Pacers31Colts18/maester-packs-joeloveless/tree/main/cis-win11-intune-l1",

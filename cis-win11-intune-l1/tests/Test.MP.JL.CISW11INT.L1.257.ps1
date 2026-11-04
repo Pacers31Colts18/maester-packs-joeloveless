@@ -6,7 +6,7 @@ function Test-JLVirtualizationbasedtechnologyHypervisorenforcedcodeintegrity {
         Feature      = 'CIS Microsoft Intune for Windows 11 Benchmark (L1)',
         Area         = 'Virtualization Based Technology',
         ResourceType = 'Policy',
-        Severity     = 'Medium',
+        Severity     = 'High',
         Control      = 'cis-intune-win11-l1:91.1',
         Service      = 'Graph',
         License      = 'INTUNE_A',
