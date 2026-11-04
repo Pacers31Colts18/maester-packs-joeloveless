@@ -1,5 +1,44 @@
 # Changelog
 
+## cis-win11-intune-bl 0.1.0
+
+First version.
+
+- **MP.JL.CISW11INT.BL.001** Prevent installation of devices using drivers that match these device setup classes is set to Enabled
+- **MP.JL.CISW11INT.BL.002** Prevent installation of devices using drivers that match these device setup classes: Also apply to matching devices that are already installed. is set to Enabled: True
+- **MP.JL.CISW11INT.BL.003** Prevent installation of devices using drivers that match these device setup classes: Prevented Classes is set to Enabled: IEEE 1394 device setup classes
+- **MP.JL.CISW11INT.BL.004** Choose drive encryption method and cipher strength (Windows 10 [Version 1511] and later): Select the encryption method for fixed data drives is set to Enabled: XTS-AES 128-bit or XTS-AES 256-bit
+- **MP.JL.CISW11INT.BL.005** Choose drive encryption method and cipher strength (Windows 10 [Version 1511] and later): Select the encryption method for operating system drives is set to Enabled: XTS-AES 128-bit or XTS-AES 256-bit
+- **MP.JL.CISW11INT.BL.006** Choose drive encryption method and cipher strength (Windows 10 [Version 1511] and later): Select the encryption method for removable data drives is set to Enabled: XTS-AES 128-bit or XTS-AES 256-bit
+- **MP.JL.CISW11INT.BL.001** Require Device Encryption is set to Enabled
+- **MP.JL.CISW11INT.BL.002** Allow Warning For Other Disk Encryption is set to Disabled
+- **MP.JL.CISW11INT.BL.003** Allow Warning For Other Disk Encryption: Allow Standard User Encryption is set to Disabled: Enabled
+- **MP.JL.CISW11INT.BL.004** Choose drive encryption method and cipher strength (Windows 10 [Version 1511] and later): Select the encryption method for operating system drives is set to Enabled: XTS-AES 128-bit or XTS-AES 256-bit
+- **MP.JL.CISW11INT.BL.005** Choose drive encryption method and cipher strength (Windows 10 [Version 1511] and later): Select the encryption method for fixed data drives is set to Enabled: XTS-AES 128-bit or XTS-AES 256-bit
+- **MP.JL.CISW11INT.BL.006** Choose drive encryption method and cipher strength (Windows 10 [Version 1511] and later): Select the encryption method for removable data drives is set to Enabled: XTS-AES 128-bit or XTS-AES 256-bit
+- **MP.JL.CISW11INT.BL.007** Prevent installation of devices using drivers that match these device setup classes is set to Enabled
+- **MP.JL.CISW11INT.BL.008** Prevent installation of devices using drivers that match these device setup classes: Also apply to matching devices that are already installed. is set to Enabled: TRUE
+- **MP.JL.CISW11INT.BL.009** Prevent installation of devices using drivers that match these device setup classes: Prevented Classes is set to Enabled: {d48179be-ec20-11d1-b6b8-00c04fa372a7}, {7ebefbc0-3200-11d2-b4c2-00a0C9697d07}, {c06ff265-ae09-48f0-812c-16753d7cba83}, {6bdd1fc1-810f-11d0-bec7-08002be2092f}
+- **MP.JL.CISW11INT.BL.010** Choose how BitLocker-protected fixed drives can be recovered is set to Enabled
+- **MP.JL.CISW11INT.BL.011** Choose how BitLocker-protected fixed drives can be recovered: Configure user storage of BitLocker recovery information is set to Enabled: Allow 48-digit recovery password
+- **MP.JL.CISW11INT.BL.012** Choose how BitLocker-protected fixed drives can be recovered: Do not enable BitLocker until recovery information is stored to AD DS for fixed data drives is set to Enabled: FALSE
+- **MP.JL.CISW11INT.BL.013** Choose how BitLocker-protected fixed drives can be recovered: Allow data recovery agent is set to Enabled: TRUE
+- **MP.JL.CISW11INT.BL.014** Choose how BitLocker-protected fixed drives can be recovered: FDVRecoveryKeyUsageDropDown_Name is set to Enabled: Allow 256-bit recovery key
+- **MP.JL.CISW11INT.BL.015** Choose how BitLocker-protected fixed drives can be recovered: Configure storage of BitLocker recovery information to AD DS is set to Enabled: Backup recovery passwords only
+- **MP.JL.CISW11INT.BL.016** Choose how BitLocker-protected fixed drives can be recovered: Omit recovery options from the BitLocker setup wizard is set to Enabled: TRUE
+- **MP.JL.CISW11INT.BL.017** Choose how BitLocker-protected fixed drives can be recovered: Save BitLocker recovery information to AD DS for fixed data drives is set to Enabled: FALSE
+- **MP.JL.CISW11INT.BL.018** Choose how BitLocker-protected operating system drives can be recovered is set to Enabled
+- **MP.JL.CISW11INT.BL.019** Choose how BitLocker-protected operating system drives can be recovered: OSRecoveryKeyUsageDropDown_Name is set to Enabled: Do not allow 256-bit recovery key
+- **MP.JL.CISW11INT.BL.020** Choose how BitLocker-protected operating system drives can be recovered: Configure storage of BitLocker recovery information to AD DS is set to Enabled: Store recovery passwords and key packages
+- **MP.JL.CISW11INT.BL.021** Choose how BitLocker-protected operating system drives can be recovered: Omit recovery options from the BitLocker setup wizard is set to Enabled: TRUE
+- **MP.JL.CISW11INT.BL.022** Choose how BitLocker-protected operating system drives can be recovered: Configure user storage of BitLocker recovery information is set to Enabled: Require 48-digit recovery password
+- **MP.JL.CISW11INT.BL.023** Choose how BitLocker-protected operating system drives can be recovered: Allow data recovery agent is set to Enabled: FALSE
+- **MP.JL.CISW11INT.BL.024** Choose how BitLocker-protected operating system drives can be recovered: Do not enable BitLocker until recovery information is stored to AD DS for operating system drives is set to Enabled: TRUE
+- **MP.JL.CISW11INT.BL.025** Choose how BitLocker-protected operating system drives can be recovered: Save BitLocker recovery information to AD DS for operating system drives is set to Enabled: TRUE
+- **MP.JL.CISW11INT.BL.026** Enforce drive encryption type on operating system drives: Select the encryption type is set to Enabled: Full encryption or Used Space Only encryption
+- **MP.JL.CISW11INT.BL.027** Deny write access to removable drives not protected by BitLocker is set to Enabled
+- **MP.JL.CISW11INT.BL.028** Deny write access to removable drives not protected by BitLocker: Do not allow write access to devices configured in another organization is set to Enabled: FALSE
+
 ## cis-win11-intune-l1 0.1.3
 
 - Virtualization Based Technology tests (MP.JL.CISW11INT.L1.257 and 258) are High severity.
