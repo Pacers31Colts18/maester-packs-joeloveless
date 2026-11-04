@@ -1,0 +1,16 @@
+{
+  "Id": "JL.CISW11INT.BL",
+  "Name": "CIS Windows 11 Intune BL",
+  "Source": "Custom",
+  "Tags": [
+    "CIS-Intune",
+    "Bitlocker",
+    "BL"
+  ],
+  "RequiresMaester": "3.0",
+  "Frameworks": [
+    {
+      "Key": "cis-intune-win11-bl"
+    }
+  ]
+}

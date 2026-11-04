@@ -8,6 +8,8 @@ One pack per baseline profile, one test per setting. Every pack needs Maester 3.
 | Pack | Folder | Code | Checks |
 | --- | --- | --- | --- |
 | CIS Windows 11 Intune L1 | [cis-win11-intune-l1](cis-win11-intune-l1/README.md) | `JL.CISW11INT.L1` | CIS Microsoft Intune for Windows 11 Benchmark v5.0.0, Level 1 |
+| CIS Windows 11 Intune BL | [cis-win11-intune-bl](cis-win11-intune-bl/README.md) | `JL.CISW11INT.BL` | CIS Microsoft Intune for Windows 11 Benchmark v5.0.0, BL |
+| CIS Windows 11 Intune BL | [cis-win11-intune-bl](cis-win11-intune-bl/README.md) | `JL.CISW11INT.BL` | CIS Microsoft Intune for Windows 11 Benchmark v5.0.0, BL |
 
 ## Install and run
 
