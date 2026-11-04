@@ -1,5 +1,9 @@
 # Changelog
 
+## cis-win11-intune-l1 0.1.1
+
+- Adds the pack banner.
+
 ## cis-win11-intune-l1 0.1.0
 
 First version.
