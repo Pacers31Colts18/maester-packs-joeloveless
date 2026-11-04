@@ -235,6 +235,45 @@ Describe 'JlIntune helpers' {
             Invoke-CortanaTest $children | Should -BeFalse
         }
 
+        It 'with several settings, passes only when each passes on its own, with one Expected for all or one per setting' {
+            # As Energy Saver: the same timer under Desktop Power, Laptop Battery Power and Laptop Power.
+            $timers = 'desktop_timer', 'battery_timer', 'portable_timer'
+            $setPolicy = {
+                param([hashtable] $Values)
+                $script:Graph["deviceManagement/configurationPolicies('m1')/settings"] = @(foreach ($id in $Values.Keys) {
+                        [pscustomobject]@{ settingInstance = [pscustomobject]@{
+                                '@odata.type'       = '#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance'
+                                settingDefinitionId = $id
+                                simpleSettingValue  = [pscustomobject]@{ value = $Values[$id] }
+                            } }
+                    })
+                $script:Graph["deviceManagement/configurationPolicies('m1')/assignments"] = @([pscustomobject]@{ target = [pscustomobject]@{ '@odata.type' = '#microsoft.graph.allDevicesAssignmentTarget' } })
+                $script:Graph['deviceManagement/configurationPolicies'] = @([pscustomobject]@{ id = 'm1'; name = 'MAC-CIS-L1'; platforms = 'macOS' })
+            }
+            $test = { param($Expected, $Operator = 'match') Test-JlIntuneSetting -Source settingsCatalog -Platform macOS -SettingDefinitionId $timers -Operator $Operator -Expected $Expected }
+
+            & $setPolicy @{ desktop_timer = 10; battery_timer = 5; portable_timer = 1 }
+            & $test '^([1-9]|10)$' | Should -BeTrue
+            $script:Detail.Result | Should -Match 'Well done. Every setting'
+            $script:Detail.Result | Should -Match '\| battery\\_timer \| MAC-CIS-L1 \| 5 \| All devices \| Yes \|'
+
+            & $setPolicy @{ desktop_timer = 10; battery_timer = 0; portable_timer = 1 }
+            & $test '^([1-9]|10)$' | Should -BeFalse
+            $script:Detail.Result | Should -Match '1 of 3 settings are not configured as required\. battery\\_timer: no assigned policy'
+
+            # A setting no policy configures fails the test and still has a row.
+            & $setPolicy @{ desktop_timer = 10; battery_timer = 5 }
+            & $test '^([1-9]|10)$' | Should -BeFalse
+            $script:Detail.Result | Should -Match '\| portable\\_timer \| \(none in scope\) \| \(not set\) \| \| No \|'
+
+            # One value per setting, in the same order (a choice setting's option id differs per setting).
+            & $setPolicy @{ desktop_timer = 'desktop_timer_0'; battery_timer = 'battery_timer_0'; portable_timer = 'portable_timer_0' }
+            & $test @('desktop_timer_0', 'battery_timer_0', 'portable_timer_0') 'eq' | Should -BeTrue
+            & $test @('desktop_timer_0', 'battery_timer_1', 'portable_timer_0') 'eq' | Should -BeFalse
+            { & $test @('desktop_timer_0', 'battery_timer_0') 'eq' } | Should -Throw '*one value for all of them, or one per setting*'
+            { Test-JlIntuneSetting -Source settingsCatalog -Platform macOS -SettingDefinitionId $timers -Operator eq -Expected x -ChildSettingDefinitionId c -ChildExpected c_1 } | Should -Throw '*one SettingDefinitionId*'
+        }
+
         It 'checks a property path for the other sources' {
             $script:Graph['deviceManagement/deviceCompliancePolicies'] = @([pscustomobject]@{ id = 'c1'; displayName = 'W11 Compliance'; '@odata.type' = '#microsoft.graph.windows10CompliancePolicy'; bitLockerEnabled = $true })
             $script:Graph["deviceManagement/deviceCompliancePolicies('c1')/assignments"] = @([pscustomobject]@{ target = [pscustomobject]@{ '@odata.type' = '#microsoft.graph.allDevicesAssignmentTarget' } })
