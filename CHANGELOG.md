@@ -1,6 +1,5 @@
 # Changelog
 
-<<<<<<< HEAD
 ## cis-ios-intune-l1 0.1.0
 
 First version.
@@ -60,7 +59,6 @@ First version.
 - **MP.JL.CISIOSINT.L1.053** Device compliance status is set to Compliant
 - **MP.JL.CISIOSINT.L1.054** Mark devices with no compliance policy assigned as is set to Not compliant
 - **MP.JL.CISIOSINT.L1.055** Compliance status validity period (days) is at most 7
-=======
 ## cis-macos-intune-l1 0.1.0
 
 First version.
@@ -159,7 +157,6 @@ First version.
 ## cis-macos26-intune-l1 0.1.0
 
 First version.
->>>>>>> origin/main
 
 ## cis-win11-intune-bl 0.1.0
 
