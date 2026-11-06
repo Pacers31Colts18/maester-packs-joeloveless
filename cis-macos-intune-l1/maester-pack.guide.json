@@ -1,0 +1,67 @@
+{
+  "$schema": "https://maester.dev/schemas/maester-pack-guide-1.0.json",
+  "Summary": "Checks that your Intune policies configure the Level 1 recommendations of the CIS Apple MacOS 26 Tahoe Intune Benchark v1.0.0, one test per setting. It reads policy configuration, not device state.",
+  "Prerequisites": [
+    {
+      "Text": "PowerShell 7.4 or later and Maester 3.0 or later."
+    },
+    {
+      "Text": "An account that can read Intune configuration, such as Global Reader or Intune Administrator."
+    }
+  ],
+  "Connect": {
+    "Steps": [
+      {
+        "Text": "Connect Maester. Its default Graph scopes include everything this pack reads.",
+        "Command": "Connect-Maester"
+      }
+    ]
+  },
+  "Run": {
+    "Commands": [
+      {
+        "Text": "Only this pack",
+        "Command": "Invoke-Maester -Pack JL.CISMACINT.L1 -SkipBuiltIn"
+      },
+      {
+        "Text": "Maester's tests and this pack",
+        "Command": "Invoke-Maester -Pack JL.CISMACINT.L1"
+      }
+    ],
+    "Options": [
+      {
+        "Name": "JLIntune.PolicyNameFilter",
+        "Default": "(none)",
+        "Text": "GlobalSettings: a wildcard such as 'W11-CIS-*'. Only policies whose name matches count, in every test that does not set its own PolicyNameFilter."
+      },
+      {
+        "Name": "<test> PolicyNameFilter",
+        "Default": "(none)",
+        "Text": "The same filter for one test, in TestSettings."
+      },
+      {
+        "Name": "<test> IncludeUnassigned",
+        "Default": "false",
+        "Text": "Count policies that are not assigned to anything."
+      },
+      {
+        "Name": "<test> AllowConflicts",
+        "Default": "false",
+        "Text": "Pass even when another counted policy sets a value that does not meet the recommendation."
+      }
+    ]
+  },
+  "AppOnly": {
+    "Supported": true,
+    "Methods": {
+      "Certificate": true,
+      "ClientSecret": true,
+      "ManagedIdentity": true,
+      "WorkloadIdentity": true
+    },
+    "Text": "Give the app the application permissions listed on this page, connect with Connect-MgGraph, and run Invoke-Maester -Pack JL.CISMACINT.L1 -SkipBuiltIn -SkipGraphConnect -NonInteractive."
+  },
+  "Support": {
+    "Pack": "https://github.com/Pacers31Colts18/maester-packs-joeloveless/issues"
+  }
+}

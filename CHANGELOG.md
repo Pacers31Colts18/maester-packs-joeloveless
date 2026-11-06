@@ -1,5 +1,6 @@
 # Changelog
 
+<<<<<<< HEAD
 ## cis-ios-intune-l1 0.1.0
 
 First version.
@@ -59,6 +60,106 @@ First version.
 - **MP.JL.CISIOSINT.L1.053** Device compliance status is set to Compliant
 - **MP.JL.CISIOSINT.L1.054** Mark devices with no compliance policy assigned as is set to Not compliant
 - **MP.JL.CISIOSINT.L1.055** Compliance status validity period (days) is at most 7
+=======
+## cis-macos-intune-l1 0.1.0
+
+First version.
+
+- **MP.JL.CISMACINT.L1.001** Disable Guest Account is set to True
+- **MP.JL.CISMACINT.L1.002** Allow Sign In is set to False
+- **MP.JL.CISMACINT.L1.003** Enabled is set to False
+- **MP.JL.CISMACINT.L1.004** Allow Apple Intelligence Report is set to False
+- **MP.JL.CISMACINT.L1.005** Allow Genmoji is set to False
+- **MP.JL.CISMACINT.L1.006** Allow Image Playground is set to False
+- **MP.JL.CISMACINT.L1.007** Allow Writing Tools is set to False
+- **MP.JL.CISMACINT.L1.008** Allow Smart Replies is set to False
+- **MP.JL.CISMACINT.L1.009** Allow Summary is set to False
+- **MP.JL.CISMACINT.L1.010** Allow Transcription is set to False
+- **MP.JL.CISMACINT.L1.011** Allow Transcription Summary is set to False
+- **MP.JL.CISMACINT.L1.012** Allow Summary is set to False
+- **MP.JL.CISMACINT.L1.013** Force On Device Only Dictation is set to True
+- **MP.JL.CISMACINT.L1.014** Automatic Device Lock is set to 15 or less, but not 0
+- **MP.JL.CISMACINT.L1.015** Change At Next Auth is set to Enabled
+- **MP.JL.CISMACINT.L1.016** Regex is configured
+- **MP.JL.CISMACINT.L1.017** Failed Attempts Reset In Minutes is at least 15
+- **MP.JL.CISMACINT.L1.018** Maximum Grace Period is set to 0
+- **MP.JL.CISMACINT.L1.019** Maximum Number of Failed Attempts is set to 5 or less, but not 0
+- **MP.JL.CISMACINT.L1.020** Maximum Passcode Age In Days is set to 365 or less, but not 0
+- **MP.JL.CISMACINT.L1.021** Minimum Passcode Length is at least 15
+- **MP.JL.CISMACINT.L1.022** Passcode Reuse Limit is at least 24
+- **MP.JL.CISMACINT.L1.023** Require Alphanumeric Passcode is set to Enabled
+- **MP.JL.CISMACINT.L1.024** Require Passcode on Device is set to True
+- **MP.JL.CISMACINT.L1.025** Enabled is set to False
+- **MP.JL.CISMACINT.L1.026** Enforce Latest Software Update Version is set to True
+- **MP.JL.CISMACINT.L1.027** Allow Standard User OS Updates is set to Allowed
+- **MP.JL.CISMACINT.L1.028** Download is set to AlwaysOn
+- **MP.JL.CISMACINT.L1.029** Install OS Updates is set to Always On
+- **MP.JL.CISMACINT.L1.030** Install Security Update is set to AlwaysOn
+- **MP.JL.CISMACINT.L1.031** Enable is set to True
+- **MP.JL.CISMACINT.L1.032** Enable Rollback is set to False
+- **MP.JL.CISMACINT.L1.033** Defer is set to Enabled
+- **MP.JL.CISMACINT.L1.034** Defer Force At User Login Max Bypass Attempts is set to 0
+- **MP.JL.CISMACINT.L1.035** Enable is set to On
+- **MP.JL.CISMACINT.L1.036** Force Enable In Setup Assistant is set to True
+- **MP.JL.CISMACINT.L1.037** Show Recovery Key is set to Disabled
+- **MP.JL.CISMACINT.L1.038** User Enters Missing Info is set to True
+- **MP.JL.CISMACINT.L1.039** Prevent FileVault From Being Disabled is set to True
+- **MP.JL.CISMACINT.L1.040** Show Full Name is set to True
+- **MP.JL.CISMACINT.L1.041** Disable Login Items Suppression is set to True
+- **MP.JL.CISMACINT.L1.042** Enable Firewall is set to True
+- **MP.JL.CISMACINT.L1.043** Enable Stealth Mode is set to True
+- **MP.JL.CISMACINT.L1.044** Allow Activity Continuation is set to False
+- **MP.JL.CISMACINT.L1.045** Allow Air Play Incoming Requests is set to False
+- **MP.JL.CISMACINT.L1.046** Allow AirDrop is set to False
+- **MP.JL.CISMACINT.L1.047** Allow Apple Personalized Advertising is set to False
+- **MP.JL.CISMACINT.L1.048** Allow ARD Remote Management Modification is set to False
+- **MP.JL.CISMACINT.L1.049** Allow Auto Unlock is set to False
+- **MP.JL.CISMACINT.L1.050** Allow Bluetooth Sharing Modification is set to False
+- **MP.JL.CISMACINT.L1.051** Allow Cloud Address Book is set to False
+- **MP.JL.CISMACINT.L1.052** Allow Cloud Bookmarks is set to False
+- **MP.JL.CISMACINT.L1.053** Allow Cloud Calendar is set to False
+- **MP.JL.CISMACINT.L1.054** Allow Cloud Desktop And Documents is set to False
+- **MP.JL.CISMACINT.L1.055** Allow Cloud Document Sync is set to False
+- **MP.JL.CISMACINT.L1.056** Allow Cloud Freeform is set to False
+- **MP.JL.CISMACINT.L1.057** Allow Cloud Keychain Sync is set to False
+- **MP.JL.CISMACINT.L1.058** Allow Cloud Mail is set to False
+- **MP.JL.CISMACINT.L1.059** Allow Cloud Notes is set to False
+- **MP.JL.CISMACINT.L1.060** Allow Cloud Photo Library is set to False
+- **MP.JL.CISMACINT.L1.061** Allow Cloud Reminders is set to False
+- **MP.JL.CISMACINT.L1.062** Allow Device Name Modification is set to False
+- **MP.JL.CISMACINT.L1.063** Allow Diagnostic Submission is set to False
+- **MP.JL.CISMACINT.L1.064** Allow Erase Content And Settings is set to False
+- **MP.JL.CISMACINT.L1.065** Allow File Sharing Modification is set to False
+- **MP.JL.CISMACINT.L1.066** Allow Find My Friends is set to False
+- **MP.JL.CISMACINT.L1.067** Allow Internet Sharing Modification is set to False
+- **MP.JL.CISMACINT.L1.068** Allow iPhone Mirroring is set to False
+- **MP.JL.CISMACINT.L1.069** Allow iTunes File Sharing is set to False
+- **MP.JL.CISMACINT.L1.070** Allow Local User Creation is set to False
+- **MP.JL.CISMACINT.L1.071** Allow Media Sharing Modification is set to False
+- **MP.JL.CISMACINT.L1.072** Allow Multiplayer Gaming is set to False
+- **MP.JL.CISMACINT.L1.073** Allow Password Proximity Requests is set to False
+- **MP.JL.CISMACINT.L1.074** Allow Password Sharing is set to False
+- **MP.JL.CISMACINT.L1.075** Allow Printer Sharing Modification is set to False
+- **MP.JL.CISMACINT.L1.076** Allow Startup Disk Modification is set to False
+- **MP.JL.CISMACINT.L1.077** Allow UI Configuration Profile Installation is set to False
+- **MP.JL.CISMACINT.L1.078** Allow Universal Control is set to False
+- **MP.JL.CISMACINT.L1.079** Display Sleep Timer is set to 10 or less, but not 0
+- **MP.JL.CISMACINT.L1.080** System Sleep Timer is set to 15 or less, but not 0
+- **MP.JL.CISMACINT.L1.081** Wake on LAN is set to False
+- **MP.JL.CISMACINT.L1.082** Wake On Modem Ring is set to False
+- **MP.JL.CISMACINT.L1.083** Destroy FV Key On Standby is set to True
+- **MP.JL.CISMACINT.L1.084** Ask For Password is set to True
+- **MP.JL.CISMACINT.L1.085** Allow User Overrides is set to False
+- **MP.JL.CISMACINT.L1.086** Allow Identified Developers is set to True
+- **MP.JL.CISMACINT.L1.087** Enable XProtect Malware Upload is set to Disabled
+- **MP.JL.CISMACINT.L1.088** Disable Override is set to True
+- **MP.JL.CISMACINT.L1.089** Removal Password is configured
+- **MP.JL.CISMACINT.L1.090** Locked enrollment is set to Yes
+
+## cis-macos26-intune-l1 0.1.0
+
+First version.
+>>>>>>> origin/main
 
 ## cis-win11-intune-bl 0.1.0
 
