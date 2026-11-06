@@ -1,0 +1,16 @@
+{
+  "Id": "JL.CISIOSINT.L1",
+  "Name": "CIS Apple iOS 26 and iPadOS26 Intune Benchmark",
+  "Source": "Custom",
+  "Tags": [
+    "CIS-Intune",
+    "iOS",
+    "L1"
+  ],
+  "RequiresMaester": "3.0",
+  "Frameworks": [
+    {
+      "Key": "cis-intune-ios26-supl1"
+    }
+  ]
+}

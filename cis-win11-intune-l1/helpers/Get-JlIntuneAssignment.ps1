@@ -11,6 +11,8 @@ function Get-JlIntuneAssignment {
         [Parameter(Mandatory)] [string] $Source
     )
 
+    # The tenant's Compliance policy settings have no assignments: they apply to every device.
+    if ($Source -eq 'tenantSetting') { return @{ IsAssigned = $true; Keys = @('AllDevices'); Targets = 'All devices' } }
     $assignments = @(Invoke-MtGraphRequest -RelativeUri "$(Get-JlIntunePolicyUri -Source $Source)('$($Policy.id)')/assignments" -ApiVersion beta)
     $keys = [System.Collections.Generic.List[string]]::new()
     $labels = [System.Collections.Generic.List[string]]::new()

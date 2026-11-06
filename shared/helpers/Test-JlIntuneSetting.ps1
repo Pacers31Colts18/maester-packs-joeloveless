@@ -5,7 +5,8 @@ function Test-JlIntuneSetting {
         -AllowConflicts, no counted policy sets a value that does not meet it. By default only assigned policies count.
         Writes the result table with Add-MtTestResultDetail and returns $true or $false; skips on access denied.
     .PARAMETER Source
-        settingsCatalog (settings catalog and Endpoint Security), compliance or deviceConfiguration.
+        settingsCatalog (settings catalog and Endpoint Security), compliance, deviceConfiguration or tenantSetting (the
+        tenant's Compliance policy settings, which apply to every device whatever PolicyNameFilter says).
     .PARAMETER SettingDefinitionId
         settingsCatalog only: the setting definition id. Several when the recommendation needs each of them (such as
         one timer under Desktop Power, Laptop Battery Power and Laptop Power): the test passes only when every one
@@ -14,7 +15,9 @@ function Test-JlIntuneSetting {
         The required value. With several SettingDefinitionId, one value for all of them or one per setting in the
         same order (for in, notIn and contains, a setting's values separated by '|').
     .PARAMETER Property
-        compliance / deviceConfiguration only: the property path, dots for nested.
+        compliance / deviceConfiguration / tenantSetting only: the property path, dots for nested, name[key=value] to
+        keep the items of a list that match. A compliance policy's Mark device noncompliant, in hours, is
+        scheduledActionsForRule.scheduledActionConfigurations[actionType=block].gracePeriodHours.
     .PARAMETER Platform
         settingsCatalog only: the platforms filter, such as windows10.
     .PARAMETER ODataType
@@ -31,7 +34,7 @@ function Test-JlIntuneSetting {
     [CmdletBinding()]
     [OutputType([bool])]
     param(
-        [Parameter(Mandatory)] [ValidateSet('settingsCatalog', 'compliance', 'deviceConfiguration')] [string] $Source,
+        [Parameter(Mandatory)] [ValidateSet('settingsCatalog', 'compliance', 'deviceConfiguration', 'tenantSetting')] [string] $Source,
         [string[]] $SettingDefinitionId = @(),
         [string] $Property,
         [Parameter(Mandatory)] [ValidateSet('eq', 'ne', 'gt', 'ge', 'lt', 'le', 'in', 'notIn', 'contains', 'match', 'exists')] [string] $Operator,
@@ -59,8 +62,9 @@ function Test-JlIntuneSetting {
     if (-not $ChildOperator.Count) { $ChildOperator = @($ChildSettingDefinitionId | ForEach-Object { 'eq' }) }
     if ($ChildSettingDefinitionId.Count -and $Source -ne 'settingsCatalog') { throw 'Child settings are for the settingsCatalog source.' }
     if ($several -and $ChildSettingDefinitionId.Count) { throw 'Child settings go with one SettingDefinitionId.' }
-    $nameFilter = Resolve-JlIntunePolicyNameFilter -PolicyNameFilter $PolicyNameFilter
-    $scope = if ($IncludeUnassigned) { '' } else { 'assigned ' }
+    $tenantWide = $Source -eq 'tenantSetting'
+    $nameFilter = if ($tenantWide) { '' } else { Resolve-JlIntunePolicyNameFilter -PolicyNameFilter $PolicyNameFilter }
+    $scope = if ($IncludeUnassigned -or $tenantWide) { '' } else { 'assigned ' }
 
     # One check per setting. A single setting takes Expected as it is; several take one value for all of them or one
     # per setting (a setting's values for in, notIn and contains separated by '|').
@@ -108,7 +112,7 @@ function Test-JlIntuneSetting {
     if ($several) { $null = $md.Append(', each setting on its own') }
     if ($nameFilter) { $null = $md.Append(" in policies named ``$nameFilter``") }
     $null = $md.AppendLine().AppendLine()
-    $null = $md.AppendLine("**Counts:** $(if ($IncludeUnassigned) { 'every policy' } else { 'assigned policies only' }); a conflicting value $(if ($AllowConflicts) { 'is allowed' } else { 'fails the test' }).").AppendLine()
+    if (-not $tenantWide) { $null = $md.AppendLine("**Counts:** $(if ($IncludeUnassigned) { 'every policy' } else { 'assigned policies only' }); a conflicting value $(if ($AllowConflicts) { 'is allowed' } else { 'fails the test' }).").AppendLine() }
     # The Meets the requirement cell of each row.
     foreach ($row in @($checks | ForEach-Object { $_.Rows })) {
         $meets = if ($row.Meets) { 'Yes' } else { 'No' }

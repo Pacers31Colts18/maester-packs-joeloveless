@@ -1,5 +1,64 @@
 # Changelog
 
+## cis-ios-intune-l1 0.1.0
+
+First version.
+
+- **MP.JL.CISIOSINT.L1.001** Block viewing corporate documents in unmanaged apps is set to Yes
+- **MP.JL.CISIOSINT.L1.002** Treat AirDrop as an unmanaged destination is set to Yes
+- **MP.JL.CISIOSINT.L1.003** Allow copy/paste to be affected by managed open-in is set to Yes
+- **MP.JL.CISIOSINT.L1.004** Block App Store is set to Yes
+- **MP.JL.CISIOSINT.L1.005** Block access to network drive in Files app is set to Yes
+- **MP.JL.CISIOSINT.L1.006** Block Siri while device is locked is set to Yes
+- **MP.JL.CISIOSINT.L1.007** Require Safari fraud warnings is set to Yes
+- **MP.JL.CISIOSINT.L1.008** Force encrypted backup is set to Yes
+- **MP.JL.CISIOSINT.L1.009** Block managed apps from storing data in iCloud is set to Yes
+- **MP.JL.CISIOSINT.L1.010** Block backup of enterprise books is set to Yes
+- **MP.JL.CISIOSINT.L1.011** Block notes and highlights sync for enterprise books is set to Yes
+- **MP.JL.CISIOSINT.L1.012** Block iCloud Photos sync is set to Yes
+- **MP.JL.CISIOSINT.L1.013** Block iCloud Photo Library is set to Yes
+- **MP.JL.CISIOSINT.L1.014** Block My Photo Stream is set to Yes
+- **MP.JL.CISIOSINT.L1.015** Block Handoff is set to Yes
+- **MP.JL.CISIOSINT.L1.016** Block iCloud backup is set to Yes
+- **MP.JL.CISIOSINT.L1.017** Block iCloud document and data sync is set to Yes
+- **MP.JL.CISIOSINT.L1.018** Block iCloud Keychain sync is set to Yes
+- **MP.JL.CISIOSINT.L1.019** Force Apple Watch wrist detection is set to Yes
+- **MP.JL.CISIOSINT.L1.020** Require AirPlay outgoing requests pairing password is set to Yes
+- **MP.JL.CISIOSINT.L1.021** Block Apple Watch auto unlock is set to Yes
+- **MP.JL.CISIOSINT.L1.022** Block iBeacon discovery of AirPrint printers is set to Yes
+- **MP.JL.CISIOSINT.L1.023** Block access to USB drive in Files app is set to Yes
+- **MP.JL.CISIOSINT.L1.024** Block sending diagnostic and usage data to Apple is set to Yes
+- **MP.JL.CISIOSINT.L1.025** Block screenshots and screen recording is set to Yes
+- **MP.JL.CISIOSINT.L1.026** Force limited ad tracking is set to Yes
+- **MP.JL.CISIOSINT.L1.027** Block trusting new enterprise app authors is set to Yes
+- **MP.JL.CISIOSINT.L1.028** Limit Apple personalized advertising is set to Yes
+- **MP.JL.CISIOSINT.L1.029** Block users from erasing all content and settings on device is set to Yes
+- **MP.JL.CISIOSINT.L1.030** Block modification of device name is set to Yes
+- **MP.JL.CISIOSINT.L1.031** Block configuration profile changes is set to Yes
+- **MP.JL.CISIOSINT.L1.032** Allow activation lock is set to Yes
+- **MP.JL.CISIOSINT.L1.033** Force automatic date and time is set to Yes
+- **MP.JL.CISIOSINT.L1.034** Block VPN creation is set to Yes
+- **MP.JL.CISIOSINT.L1.035** Block Control Center access in lock screen is set to Yes
+- **MP.JL.CISIOSINT.L1.036** Block Today view in lock screen is set to Yes
+- **MP.JL.CISIOSINT.L1.037** Block Wallet notifications in lock screen is set to Yes
+- **MP.JL.CISIOSINT.L1.038** Require password is set to Yes
+- **MP.JL.CISIOSINT.L1.039** Block simple passwords is set to Yes
+- **MP.JL.CISIOSINT.L1.040** Minimum password length is at least 6
+- **MP.JL.CISIOSINT.L1.041** Maximum minutes after screen lock before password is required is set to Immediately
+- **MP.JL.CISIOSINT.L1.042** Maximum minutes of inactivity until screen locks is at most 2
+- **MP.JL.CISIOSINT.L1.043** Block password proximity requests is set to Yes
+- **MP.JL.CISIOSINT.L1.044** Block password sharing is set to Yes
+- **MP.JL.CISIOSINT.L1.045** Require Touch ID or Face ID authentication for AutoFill of password or credit card information is set to Yes
+- **MP.JL.CISIOSINT.L1.046** Block voice dialing while device is locked is set to Yes
+- **MP.JL.CISIOSINT.L1.047** Lock Screen Message is configured
+- **MP.JL.CISIOSINT.L1.048** Locked enrollment is set to Yes
+- **MP.JL.CISIOSINT.L1.049** Sync with computers is set to Deny All
+- **MP.JL.CISIOSINT.L1.050** Jailbroken devices is set to Block
+- **MP.JL.CISIOSINT.L1.051** Minimum OS version is configured
+- **MP.JL.CISIOSINT.L1.052** Mark device noncompliant is set to Immediately
+- **MP.JL.CISIOSINT.L1.053** Device compliance status is set to Compliant
+- **MP.JL.CISIOSINT.L1.054** Mark devices with no compliance policy assigned as is set to Not compliant
+- **MP.JL.CISIOSINT.L1.055** Compliance status validity period (days) is at most 7
 ## cis-macos-intune-l1 0.1.0
 
 First version.

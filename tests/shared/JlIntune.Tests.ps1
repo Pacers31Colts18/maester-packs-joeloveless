@@ -7,8 +7,10 @@ BeforeAll {
 
     # Stand-ins for the Maester commands the helpers call.
     function Invoke-MtGraphRequest {
-        param([string] $RelativeUri, [string] $ApiVersion, [string[]] $Select)
+        param([string] $RelativeUri, [string] $ApiVersion, [string[]] $Select, [hashtable] $QueryParameters)
         $script:GraphCalls.Add($RelativeUri)
+        # The policy list's query: the calls after it, such as a policy's assignments, have none.
+        if ($RelativeUri -eq 'deviceManagement/deviceCompliancePolicies') { $script:GraphQuery = $QueryParameters }
         if ($script:GraphError) { throw $script:GraphError }
         if (-not $script:Graph.ContainsKey($RelativeUri)) { throw "Unexpected Graph call: $RelativeUri" }
         $script:Graph[$RelativeUri]
@@ -278,6 +280,57 @@ Describe 'JlIntune helpers' {
             $script:Graph['deviceManagement/deviceCompliancePolicies'] = @([pscustomobject]@{ id = 'c1'; displayName = 'W11 Compliance'; '@odata.type' = '#microsoft.graph.windows10CompliancePolicy'; bitLockerEnabled = $true })
             $script:Graph["deviceManagement/deviceCompliancePolicies('c1')/assignments"] = @([pscustomobject]@{ target = [pscustomobject]@{ '@odata.type' = '#microsoft.graph.allDevicesAssignmentTarget' } })
             Test-JlIntuneSetting -Source compliance -ODataType '#microsoft.graph.windows10CompliancePolicy' -Property bitLockerEnabled -Operator eq -Expected $true | Should -BeTrue
+        }
+
+        It 'leaves out a configuration profile that leaves the property at Not configured (false)' {
+            $script:Graph['deviceManagement/deviceConfigurations'] = @(
+                [pscustomobject]@{ id = 'd1'; displayName = 'IOS Restrictions'; '@odata.type' = '#microsoft.graph.iosGeneralDeviceConfiguration'; iCloudBlockBackup = $true }
+                [pscustomobject]@{ id = 'd2'; displayName = 'IOS Wallpaper'; '@odata.type' = '#microsoft.graph.iosGeneralDeviceConfiguration'; iCloudBlockBackup = $false }
+            )
+            foreach ($id in 'd1', 'd2') { $script:Graph["deviceManagement/deviceConfigurations('$id')/assignments"] = @([pscustomobject]@{ target = [pscustomobject]@{ '@odata.type' = '#microsoft.graph.allDevicesAssignmentTarget' } }) }
+            $test = { Test-JlIntuneSetting -Source deviceConfiguration -ODataType '#microsoft.graph.iosGeneralDeviceConfiguration' -Property iCloudBlockBackup -Operator eq -Expected true }
+            & $test | Should -BeTrue
+            $script:Detail.Result | Should -Not -Match 'IOS Wallpaper'
+            # Only Not configured: no profile requires it.
+            $script:Graph['deviceManagement/deviceConfigurations'] = @($script:Graph['deviceManagement/deviceConfigurations'][1])
+            & $test | Should -BeFalse
+        }
+
+        It 'checks a compliance policy action, read only for that test' {
+            $action = { param($Type, $Hours) [pscustomobject]@{ actionType = $Type; gracePeriodHours = $Hours } }
+            $policy = {
+                param($Hours)
+                [pscustomobject]@{ id = 'c1'; displayName = 'IOS Compliance'; '@odata.type' = '#microsoft.graph.iosCompliancePolicy'; securityBlockJailbrokenDevices = $true
+                    scheduledActionsForRule = @([pscustomobject]@{ scheduledActionConfigurations = @((& $action notification 240), (& $action block $Hours)) })
+                }
+            }
+            $script:Graph["deviceManagement/deviceCompliancePolicies('c1')/assignments"] = @([pscustomobject]@{ target = [pscustomobject]@{ '@odata.type' = '#microsoft.graph.allDevicesAssignmentTarget' } })
+            $block = @{ Source = 'compliance'; ODataType = '#microsoft.graph.iosCompliancePolicy'; Property = 'scheduledActionsForRule.scheduledActionConfigurations[actionType=block].gracePeriodHours'; Operator = 'eq'; Expected = '0' }
+            $script:Graph['deviceManagement/deviceCompliancePolicies'] = @(& $policy 0)
+            Test-JlIntuneSetting @block | Should -BeTrue
+            $script:GraphQuery['$expand'] | Should -Be 'scheduledActionsForRule($expand=scheduledActionConfigurations)'
+            $script:Graph['deviceManagement/deviceCompliancePolicies'] = @(& $policy 24)
+            Test-JlIntuneSetting @block | Should -BeFalse
+            # No action of that type: not configured.
+            $script:Graph['deviceManagement/deviceCompliancePolicies'] = @([pscustomobject]@{ id = 'c1'; displayName = 'IOS Compliance'; '@odata.type' = '#microsoft.graph.iosCompliancePolicy'; securityBlockJailbrokenDevices = $true; scheduledActionsForRule = @() })
+            Test-JlIntuneSetting @block | Should -BeFalse
+            # Other compliance tests don't ask Graph for the actions.
+            $script:Graph['deviceManagement/deviceCompliancePolicies'] = @(& $policy 0)
+            Test-JlIntuneSetting -Source compliance -ODataType '#microsoft.graph.iosCompliancePolicy' -Property securityBlockJailbrokenDevices -Operator eq -Expected true | Should -BeTrue
+            $script:GraphQuery | Should -BeNullOrEmpty
+        }
+
+        It 'checks a tenant setting, which every device gets and false is a value of' {
+            $script:Graph['deviceManagement/settings'] = [pscustomobject]@{ secureByDefault = $true; deviceComplianceCheckinThresholdDays = 7 }
+            $tenant = { param($Property, $Operator, $Expected) Test-JlIntuneSetting -Source tenantSetting -Property $Property -Operator $Operator -Expected $Expected -PolicyNameFilter 'Nothing*' }
+            & $tenant secureByDefault eq true | Should -BeTrue
+            $script:Detail.Result | Should -Match 'Compliance policy settings \| True \| All devices \| Yes'
+            $script:Detail.Result | Should -Not -Match 'Counts'
+            & $tenant deviceComplianceCheckinThresholdDays le 7 | Should -BeTrue
+            $script:Graph['deviceManagement/settings'] = [pscustomobject]@{ secureByDefault = $false; deviceComplianceCheckinThresholdDays = 30 }
+            & $tenant secureByDefault eq true | Should -BeFalse
+            $script:Detail.Result | Should -Match 'Compliance policy settings \| False \| All devices \| No'
+            & $tenant deviceComplianceCheckinThresholdDays le 7 | Should -BeFalse
         }
 
         It 'leaves out a compliance policy that leaves the property at Not configured (false)' {
