@@ -22,13 +22,14 @@ function Get-JlIntuneSettingRow {
         [string[]] $ChildOperator = @()
     )
 
-    foreach ($policy in (Get-JlIntunePolicy -Source $Source -NameFilter $NameFilter -Platform $Platform -ODataType $ODataType)) {
+    foreach ($policy in (Get-JlIntunePolicy -Source $Source -NameFilter $NameFilter -Platform $Platform -ODataType $ODataType -ComplianceActions:($Property -like 'scheduledActionsForRule*'))) {
         $settingList = if ($Source -eq 'settingsCatalog') { @(Get-JlIntunePolicySettingList -Policy $policy) } else { @() }
         $configured = Get-JlIntuneConfiguredValue -Policy $policy -Source $Source -SettingDefinitionId $SettingDefinitionId -Property $Property -SettingList $settingList
         if (-not $configured.Found) { continue }
-        # A compliance property set to false is Not configured: Intune doesn't evaluate it, so the policy neither meets
-        # nor conflicts with the requirement and is left out, like a settings catalog policy without the setting.
-        if ($Source -eq 'compliance' -and $configured.Values.Count -eq 1 -and "$($configured.Values[0])" -eq 'false') { continue }
+        # A compliance or configuration profile property set to false is Not configured: Intune doesn't apply it, so the
+        # policy neither meets nor conflicts with the requirement and is left out, like a settings catalog policy without
+        # the setting.
+        if ($Source -in 'compliance', 'deviceConfiguration' -and $configured.Values.Count -eq 1 -and "$($configured.Values[0])" -eq 'false') { continue }
         $meets = Test-JlIntuneValue -Actual $configured.Values -Operator $Operator -Expected $Expected
         $value = Format-JlIntuneValue -Values $configured.Values
         for ($i = 0; $i -lt @($ChildSettingDefinitionId).Count; $i++) {
