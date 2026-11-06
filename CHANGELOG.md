@@ -1,5 +1,66 @@
 # Changelog
 
+## cis-defender-intune-l1 0.1.0
+
+First version.
+
+- **MP.JL.CISDEFINT.L1.001** Configure local setting override for reporting to Microsoft MAPS is set to Disabled
+- **MP.JL.CISDEFINT.L1.002** Configure the 'Block at First Sight' feature is set to Enabled
+- **MP.JL.CISDEFINT.L1.003** Turn on process scanning whenever real-time protection is enabled is set to Enabled
+- **MP.JL.CISDEFINT.L1.004** Turn off routine remediation is set to Disabled
+- **MP.JL.CISDEFINT.L1.005** Allow Archive Scanning is set to Allowed
+- **MP.JL.CISDEFINT.L1.006** Allow Behavior Monitoring is set to Allowed
+- **MP.JL.CISDEFINT.L1.007** Allow Cloud Protection is set to Allowed
+- **MP.JL.CISDEFINT.L1.008** Allow Email Scanning is set to Allowed
+- **MP.JL.CISDEFINT.L1.009** Allow Full Scan Removable Drive Scanning is set to Allowed
+- **MP.JL.CISDEFINT.L1.010** Allow On Access Protection is set to Allow
+- **MP.JL.CISDEFINT.L1.011** Allow Realtime Monitoring is set to Allowed
+- **MP.JL.CISDEFINT.L1.012** Allow scanning of all downloaded files and attachments is set to Allowed
+- **MP.JL.CISDEFINT.L1.013** Allow Script Scanning is set to Allowed
+- **MP.JL.CISDEFINT.L1.014** ASR: Block abuse of exploited vulnerable signed drivers is set to Block
+- **MP.JL.CISDEFINT.L1.015** ASR: Block Adobe Reader from creating child processes is set to Block
+- **MP.JL.CISDEFINT.L1.016** ASR: Block all Office applications from creating child processes is set to Audit or Block
+- **MP.JL.CISDEFINT.L1.017** ASR: Block credential stealing from the Windows local security authority subsystem is set to Block
+- **MP.JL.CISDEFINT.L1.018** ASR: Block executable content from email client and webmail is set to Block
+- **MP.JL.CISDEFINT.L1.019** ASR: Block executable files from running unless they meet a prevalence, age, or trusted list criterion is set to Audit or Block
+- **MP.JL.CISDEFINT.L1.020** ASR: Block execution of potentially obfuscated scripts is set to Audit or Block
+- **MP.JL.CISDEFINT.L1.021** ASR: Block JavaScript or VBScript from launching downloaded executable content is set to Block
+- **MP.JL.CISDEFINT.L1.022** ASR: Block Office applications from creating executable content is set to Block
+- **MP.JL.CISDEFINT.L1.023** ASR: Block Office applications from injecting code into other processes is set to Block
+- **MP.JL.CISDEFINT.L1.024** ASR: Block Office communication application from creating child processes is set to Audit or Block
+- **MP.JL.CISDEFINT.L1.025** ASR: Block persistence through WMI event subscription is set to Block
+- **MP.JL.CISDEFINT.L1.026** ASR: Block process creations originating from PSExec and WMI commands is set to Audit or Block
+- **MP.JL.CISDEFINT.L1.027** ASR: Block rebooting machine in Safe Mode is set to Block
+- **MP.JL.CISDEFINT.L1.028** ASR: Block untrusted and unsigned processes that run from USB is set to Block
+- **MP.JL.CISDEFINT.L1.029** ASR: Block Win32 API calls from Office macros is set to Block
+- **MP.JL.CISDEFINT.L1.030** ASR: Use advanced protection against ransomware is set to Audit or Block
+- **MP.JL.CISDEFINT.L1.031** Check For Signatures Before Running Scan is set to Enabled
+- **MP.JL.CISDEFINT.L1.032** Cloud Block Level is set to High or higher
+- **MP.JL.CISDEFINT.L1.033** Cloud Extended Timeout is at least 1
+- **MP.JL.CISDEFINT.L1.034** Days Until Aggressive Catchup Quick Scan is set to 7
+- **MP.JL.CISDEFINT.L1.035** Enable Dynamic Signature Dropped Event Reporting is set to Dynamic Security intelligence update events will be reported
+- **MP.JL.CISDEFINT.L1.036** Enable File Hash Computation is set to Enable
+- **MP.JL.CISDEFINT.L1.037** Enable Network Protection is set to Enabled (block mode)
+- **MP.JL.CISDEFINT.L1.038** Hide Exclusions From Local Users is set to Enabled
+- **MP.JL.CISDEFINT.L1.039** Oobe Enable Rtp And Sig Update is set to Enabled
+- **MP.JL.CISDEFINT.L1.040** PUA Protection is set to PUA Protection on
+- **MP.JL.CISDEFINT.L1.041** Quick Scan Include Exclusions is set to 1
+- **MP.JL.CISDEFINT.L1.042** Real Time Scan Direction is set to Monitor all files bi-directional
+- **MP.JL.CISDEFINT.L1.043** Remote Encryption Protection Configured State is set to Audit or Block
+- **MP.JL.CISDEFINT.L1.044** Scan Parameter is set to Quick scan or Full scan
+- **MP.JL.CISDEFINT.L1.045** Schedule Quick Scan Time is at least 1
+- **MP.JL.CISDEFINT.L1.046** Schedule Scan Time is at least 1
+- **MP.JL.CISDEFINT.L1.047** Schedule Scan Day is not set to No scheduled scan
+- **MP.JL.CISDEFINT.L1.048** Signature Update Interval is set to 1 to 4
+- **MP.JL.CISDEFINT.L1.049** Submit Samples Consent is set to Send safe samples or all samples automatically
+- **MP.JL.CISDEFINT.L1.050** Remediation action for Moderate severity threats is set to Quarantine or Remove
+- **MP.JL.CISDEFINT.L1.051** Remediation action for High severity threats is set to Quarantine or Remove
+- **MP.JL.CISDEFINT.L1.052** Remediation action for Severe threats is set to Quarantine or Remove
+
+## cis-win11-defender-intune-l1 0.1.0
+
+First version.
+
 ## cis-ios-intune-l1 0.1.0
 
 First version.
