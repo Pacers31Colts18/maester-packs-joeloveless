@@ -1,0 +1,16 @@
+{
+  "Id": "JL.CISMACINT.L1",
+  "Name": "CIS Apple MacOS 26 Tahoe Intune Benchmark",
+  "Source": "Custom",
+  "Tags": [
+    "CIS-Intune",
+    "macOS",
+    "L1"
+  ],
+  "RequiresMaester": "3.0",
+  "Frameworks": [
+    {
+      "Key": "cis-intune-macos26-l1"
+    }
+  ]
+}
