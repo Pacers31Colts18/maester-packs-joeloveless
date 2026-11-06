@@ -1,0 +1,16 @@
+{
+  "Id": "JL.CISDEFINT.L1",
+  "Name": "CIS Intune for Microsoft Defender Antivirus Benchmark",
+  "Source": "Custom",
+  "Tags": [
+    "CIS-Intune",
+    "Windows11",
+    "L1"
+  ],
+  "RequiresMaester": "3.0",
+  "Frameworks": [
+    {
+      "Key": "cis-intune-defint-l1"
+    }
+  ]
+}
