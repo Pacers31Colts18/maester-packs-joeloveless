@@ -13,6 +13,7 @@ One pack per baseline profile, one test per setting. Every pack needs Maester 3.
 | CIS Apple MacOS 26 Tahoe Intune Benchmark | [cis-macos-intune-l1](cis-macos-intune-l1/README.md) | `JL.CISMACINT.L1` | CIS Apple MacOS 26 Tahoe Intune Benchark v1.0.0, Level 1 |
 | CIS Microsoft Intune for Microsoft Defender Antivirus | [cis-win11-defender-intune-l1](cis-win11-defender-intune-l1/README.md) | `JL.CISDEFINT.L1` | CIS Microsoft Intune for Microsoft Defender Antivirus Benchmark v1.0.0, Level 1 |
 | CIS Intune for Microsoft Defender Antivirus Benchmark | [cis-defender-intune-l1](cis-defender-intune-l1/README.md) | `JL.CISDEFINT.L1` | CIS Intune for Microsoft Defender Antivirus Benchmark v1.0.0, Level 1 |
+| CIS Intune for Microsoft Defender Antivirus Benchmark | [cis-defender-intune-l1](cis-defender-intune-l1/README.md) | `JL.CISDEFINT.L1` | CIS Intune for Microsoft Defender Antivirus Benchmark v1.0.0, Level 1 |
 
 ## Install and run
 
