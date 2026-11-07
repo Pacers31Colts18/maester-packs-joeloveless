@@ -1,5 +1,109 @@
 # Changelog
 
+## cis-edge-intune-l1 0.1.0
+
+First version.
+
+- **MP.JL.CISEDGEINT.L1.001** Enable Google Cast is set to Disabled
+- **MP.JL.CISEDGEINT.L1.002** Allow users to manage installed CA certificates is set to Enabled: Disallow users from managing certificates
+- **MP.JL.CISEDGEINT.L1.003** Control use of insecure content exceptions is set to Enabled: Do not allow any site to load blockable mixed content
+- **MP.JL.CISEDGEINT.L1.004** Control use of the File System API for writing is set to Enabled: Don't allow any site to request write access to files and directories
+- **MP.JL.CISEDGEINT.L1.005** Default automatic downloads setting is set to Enabled: Don't allow any website to perform automatic downloads
+- **MP.JL.CISEDGEINT.L1.006** Default geolocation setting is set to Enabled: Don't allow any site to track users' physical location
+- **MP.JL.CISEDGEINT.L1.007** Enable insecure download warnings is set to Enabled
+- **MP.JL.CISEDGEINT.L1.008** Configure Edge Website Typo Protection is set to Enabled
+- **MP.JL.CISEDGEINT.L1.009** Configure users ability to override feature flags is set to Enabled: Prevent users from overriding feature flags
+- **MP.JL.CISEDGEINT.L1.010** Blocks external extensions from being installed is set to Enabled
+- **MP.JL.CISEDGEINT.L1.011** Enable Gamer Mode is set to Disabled
+- **MP.JL.CISEDGEINT.L1.012** Allow Basic authentication for HTTP is set to Disabled
+- **MP.JL.CISEDGEINT.L1.013** Allow cross-origin HTTP Basic Auth prompts is set to Disabled
+- **MP.JL.CISEDGEINT.L1.014** Guided Switch Enabled is set to Disabled
+- **MP.JL.CISEDGEINT.L1.015** Specifies whether to block requests from public websites to devices on a user's local network is set to Enabled
+- **MP.JL.CISEDGEINT.L1.016** Enable saving passwords to the password manager is set to Disabled
+- **MP.JL.CISEDGEINT.L1.017** Enable startup boost is set to Disabled
+- **MP.JL.CISEDGEINT.L1.018** Configure Microsoft Defender SmartScreen is set to Enabled
+- **MP.JL.CISEDGEINT.L1.019** Configure Microsoft Defender SmartScreen to block potentially unwanted apps is set to Enabled
+- **MP.JL.CISEDGEINT.L1.020** Enable Microsoft Defender SmartScreen DNS requests is set to Enabled
+- **MP.JL.CISEDGEINT.L1.021** Force Microsoft Defender SmartScreen checks on downloads from trusted sources is set to Enabled
+- **MP.JL.CISEDGEINT.L1.022** Prevent bypassing Microsoft Defender SmartScreen prompts for sites is set to Enabled
+- **MP.JL.CISEDGEINT.L1.023** Prevent bypassing of Microsoft Defender SmartScreen warnings about downloads is set to Enabled
+- **MP.JL.CISEDGEINT.L1.024** Disable Bing chat entry-points on Microsoft Edge Enterprise new tab page is set to Disabled
+- **MP.JL.CISEDGEINT.L1.025** Ads setting for sites with intrusive ads is set to Enabled: Block ads on sites with intrusive ads
+- **MP.JL.CISEDGEINT.L1.026** Allow download restrictions is set to Enabled: Block malicious downloads
+- **MP.JL.CISEDGEINT.L1.027** Allow Google Cast to connect to Cast devices on all IP addresses is set to Disabled
+- **MP.JL.CISEDGEINT.L1.028** Allow import of data from other browsers on each Microsoft Edge launch is set to Disabled
+- **MP.JL.CISEDGEINT.L1.029** Allow importing of autofill form data is set to Disabled
+- **MP.JL.CISEDGEINT.L1.030** Allow importing of browser settings is set to Disabled
+- **MP.JL.CISEDGEINT.L1.031** Allow importing of home page settings is set to Disabled
+- **MP.JL.CISEDGEINT.L1.032** Allow importing of payment info is set to Disabled
+- **MP.JL.CISEDGEINT.L1.033** Allow importing of saved passwords is set to Disabled
+- **MP.JL.CISEDGEINT.L1.034** Allow importing of search engine settings is set to Disabled
+- **MP.JL.CISEDGEINT.L1.035** Allow managed extensions to use the Enterprise Hardware Platform API is set to Disabled
+- **MP.JL.CISEDGEINT.L1.036** Allow personalization of ads, search and news by sending browsing history to Microsoft is set to Disabled
+- **MP.JL.CISEDGEINT.L1.037** Allow queries to a Browser Network Time service is set to Enabled
+- **MP.JL.CISEDGEINT.L1.038** Allow remote debugging is set to Disabled
+- **MP.JL.CISEDGEINT.L1.039** Allow the audio sandbox to run is set to Enabled
+- **MP.JL.CISEDGEINT.L1.040** Allow user feedback is set to Disabled
+- **MP.JL.CISEDGEINT.L1.041** Allow Web Authentication requests on sites with broken TLS certificates is set to Disabled
+- **MP.JL.CISEDGEINT.L1.042** Allow websites to query for available payment methods is set to Disabled
+- **MP.JL.CISEDGEINT.L1.043** Automatically import another browser's data and settings at first run is set to Enabled: Disables automatic import, and the import section of the first-run experience is skipped
+- **MP.JL.CISEDGEINT.L1.044** Automatically open downloaded MHT or MHTML files from the web in Internet Explorer mode is set to Disabled
+- **MP.JL.CISEDGEINT.L1.045** Block tracking of users' web-browsing activity is set to Enabled: Balanced or Strict
+- **MP.JL.CISEDGEINT.L1.046** Clear browsing data when Microsoft Edge closes is set to Disabled
+- **MP.JL.CISEDGEINT.L1.047** Clear cached images and files when Microsoft Edge closes is set to Disabled
+- **MP.JL.CISEDGEINT.L1.048** Clear history for IE and IE mode every time you exit is set to Disabled
+- **MP.JL.CISEDGEINT.L1.049** Configure browser process code integrity guard setting is set to Enabled: Enable code integrity guard enforcement in the browser process
+- **MP.JL.CISEDGEINT.L1.050** Configure InPrivate mode availability is set to Enabled: InPrivate mode disabled
+- **MP.JL.CISEDGEINT.L1.051** Configure the list of names that will bypass the HSTS policy check is set to Disabled
+- **MP.JL.CISEDGEINT.L1.052** Configure the list of types that are excluded from synchronization is set to Enabled and includes passwords
+- **MP.JL.CISEDGEINT.L1.053** Configure the Share experience is set to Enabled: Don't allow using the Share experience
+- **MP.JL.CISEDGEINT.L1.054** Continue running background apps after Microsoft Edge closes is set to Disabled
+- **MP.JL.CISEDGEINT.L1.055** Control communication with the Experimentation and Configuration Service is set to Enabled: Disable communication with the Experimentation and Configuration Service
+- **MP.JL.CISEDGEINT.L1.056** Control where security restrictions on insecure origins apply is set to Disabled
+- **MP.JL.CISEDGEINT.L1.057** Delete old browser data on migration is set to Disabled
+- **MP.JL.CISEDGEINT.L1.058** Disable saving browser history is set to Disabled
+- **MP.JL.CISEDGEINT.L1.059** Disable synchronization of data using Microsoft sync services is set to Enabled
+- **MP.JL.CISEDGEINT.L1.060** DNS interception checks enabled is set to Enabled
+- **MP.JL.CISEDGEINT.L1.061** Dynamic Code Settings is set to Enabled: Prevent the browser process from creating dynamic code
+- **MP.JL.CISEDGEINT.L1.062** Edge 3P SERP Telemetry Enabled is set to Disabled
+- **MP.JL.CISEDGEINT.L1.063** Edge Wallet E-Tree Enabled is set to Disabled
+- **MP.JL.CISEDGEINT.L1.064** Enable Application Bound Encryption is set to Enabled
+- **MP.JL.CISEDGEINT.L1.065** Enable AutoFill for addresses is set to Disabled
+- **MP.JL.CISEDGEINT.L1.066** Enable AutoFill for payment instruments is set to Disabled
+- **MP.JL.CISEDGEINT.L1.067** Enable browser legacy extension point blocking is set to Enabled
+- **MP.JL.CISEDGEINT.L1.068** Enable component updates in Microsoft Edge is set to Enabled
+- **MP.JL.CISEDGEINT.L1.069** Enable deleting browser and download history is set to Disabled
+- **MP.JL.CISEDGEINT.L1.070** Enable globally scoped HTTP auth cache is set to Disabled
+- **MP.JL.CISEDGEINT.L1.071** Enable network prediction is set to Enabled: Don't predict network actions on any network connection
+- **MP.JL.CISEDGEINT.L1.072** Enable profile creation from the Identity flyout menu or the Settings page is set to Disabled
+- **MP.JL.CISEDGEINT.L1.073** Enable resolution of navigation errors using a web service is set to Disabled
+- **MP.JL.CISEDGEINT.L1.074** Enable security warnings for command-line flags is set to Enabled
+- **MP.JL.CISEDGEINT.L1.075** Enable site isolation for every site is set to Enabled
+- **MP.JL.CISEDGEINT.L1.076** Enable the Search bar is set to Disabled
+- **MP.JL.CISEDGEINT.L1.077** Enable tab organization suggestions is set to Disabled
+- **MP.JL.CISEDGEINT.L1.078** Enable upload files from mobile in Microsoft Edge desktop is set to Disabled
+- **MP.JL.CISEDGEINT.L1.079** Enable use of ephemeral profiles is set to Disabled
+- **MP.JL.CISEDGEINT.L1.080** Enable warnings for insecure forms is set to Enabled
+- **MP.JL.CISEDGEINT.L1.081** Enables DALL-E themes generation is set to Disabled
+- **MP.JL.CISEDGEINT.L1.082** Enhance the security state in Microsoft Edge is set to Enabled: Balanced mode or Strict mode
+- **MP.JL.CISEDGEINT.L1.083** Hide the First-run experience and splash screen is set to Enabled
+- **MP.JL.CISEDGEINT.L1.084** In-app support Enabled is set to Disabled
+- **MP.JL.CISEDGEINT.L1.085** Manage exposure of local IP addressess by WebRTC is set to Disabled
+- **MP.JL.CISEDGEINT.L1.086** Notify a user that a browser restart is recommended or required for pending updates is set to Enabled: Required - Show a recurring prompt to the user indicating that a restart is required
+- **MP.JL.CISEDGEINT.L1.087** Set disk cache size, in bytes is set to Enabled: 250609664
+- **MP.JL.CISEDGEINT.L1.088** Set the time period for update notifications is set to Enabled: 86400000
+- **MP.JL.CISEDGEINT.L1.089** Shopping in Microsoft Edge Enabled is set to Disabled
+- **MP.JL.CISEDGEINT.L1.090** Show Microsoft Rewards experiences is set to Disabled
+- **MP.JL.CISEDGEINT.L1.091** Show the Reload in Internet Explorer mode button in the toolbar is set to Disabled
+- **MP.JL.CISEDGEINT.L1.092** Specifies whether SharedArrayBuffers can be used in a non cross-origin-isolated context is set to Disabled
+- **MP.JL.CISEDGEINT.L1.093** Standalone Sidebar Enabled is set to Disabled
+- **MP.JL.CISEDGEINT.L1.094** Suggest similar pages when a webpage can't be found is set to Disabled
+- **MP.JL.CISEDGEINT.L1.095** Suppress the unsupported OS warning is set to Disabled
+- **MP.JL.CISEDGEINT.L1.096** Wait for Internet Explorer mode tabs to completely unload before ending the browser session is set to Disabled
+- **MP.JL.CISEDGEINT.L1.097** Wallet Donation Enabled is set to Disabled
+- **MP.JL.CISEDGEINT.L1.098** Update policy override default is set to Enabled: Always allow updates or Automatic silent updates only
+- **MP.JL.CISEDGEINT.L1.099** Auto-update check period override is set to Enabled: any value except 0
+
 ## cis-defender-intune-l1 0.2.0
 
 - **MP.JL.CISDEFINT.L1.001** Configure local setting override for reporting to Microsoft MAPS is set to Disabled

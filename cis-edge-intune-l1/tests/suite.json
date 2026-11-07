@@ -1,0 +1,16 @@
+{
+  "Id": "JL.CISEDGEINT.L1",
+  "Name": "CIS Microsoft Intune for Edge Benchmark",
+  "Source": "Custom",
+  "Tags": [
+    "CIS-Intune",
+    "MicrosoftEdge",
+    "L1"
+  ],
+  "RequiresMaester": "3.0",
+  "Frameworks": [
+    {
+      "Key": "cis-intune-edge-l1"
+    }
+  ]
+}
