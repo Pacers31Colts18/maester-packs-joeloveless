@@ -1,5 +1,9 @@
 # Changelog
 
+## cis-defender-intune-l1 0.2.1
+
+- New pack Guid.
+
 ## cis-edge-intune-l1 0.1.0
 
 First version.

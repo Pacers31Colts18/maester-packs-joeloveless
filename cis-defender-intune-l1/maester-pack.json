@@ -1,10 +1,10 @@
 {
   "$schema": "https://maester.dev/schemas/maester-pack-1.0.json",
   "Id": "pacers31colts18.cis-defender-intune-l1",
-  "Guid": "02fce847-0614-4c94-a4c2-bf5162739985",
+  "Guid": "d8741fdf-e2fe-4176-8959-abacbba23496",
   "Name": "CIS Intune for Microsoft Defender Antivirus Benchmark",
   "Description": "Checks that Intune policies configure the Level 1 recommendations of the CIS Intune for Microsoft Defender Antivirus Benchmark v1.0.0. One test per setting.",
-  "Version": "0.2.0",
+  "Version": "0.2.1",
   "Publisher": "pacers31colts18",
   "License": "MIT",
   "Homepage": "https://github.com/Pacers31Colts18/maester-packs-joeloveless/tree/main/cis-defender-intune-l1",
