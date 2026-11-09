@@ -1,0 +1,16 @@
+{
+  "Id": "JL.CISOFFINT.L1",
+  "Name": "CIS Microsoft Intune for Office Benchmark",
+  "Source": "Custom",
+  "Tags": [
+    "CIS-Intune",
+    "MicrosoftOffice",
+    "L1"
+  ],
+  "RequiresMaester": "3.0",
+  "Frameworks": [
+    {
+      "Key": "cis-intune-office-l1"
+    }
+  ]
+}

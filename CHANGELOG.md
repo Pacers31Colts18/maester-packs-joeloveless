@@ -1,5 +1,235 @@
 # Changelog
 
+## cis-office-intune-l1 0.1.0
+
+First version.
+
+- **MP.JL.CISOFFINT.L1.001** Block Flash activation in Office documents is set to Enabled: Block all activation
+- **MP.JL.CISOFFINT.L1.002** Restrict legacy JScript execution for Office is set to Enabled
+- **MP.JL.CISOFFINT.L1.003** Add-on Management is set to Enabled
+- **MP.JL.CISOFFINT.L1.004** Bind to object is set to Enabled
+- **MP.JL.CISOFFINT.L1.005** Consistent Mime Handling is set to Enabled
+- **MP.JL.CISOFFINT.L1.006** Disable user name and password is set to Enabled
+- **MP.JL.CISOFFINT.L1.007** Information Bar is set to Enabled
+- **MP.JL.CISOFFINT.L1.008** Local Machine Zone Lockdown Security is set to Enabled
+- **MP.JL.CISOFFINT.L1.009** Mime Sniffing Safety Feature is set to Enabled
+- **MP.JL.CISOFFINT.L1.010** Navigate URL is set to Enabled
+- **MP.JL.CISOFFINT.L1.011** Object Caching Protection is set to Enabled
+- **MP.JL.CISOFFINT.L1.012** Protection From Zone Elevation is set to Enabled
+- **MP.JL.CISOFFINT.L1.013** Restrict ActiveX Install is set to Enabled
+- **MP.JL.CISOFFINT.L1.014** Restrict File Download is set to Enabled
+- **MP.JL.CISOFFINT.L1.015** Saved from URL is set to Enabled
+- **MP.JL.CISOFFINT.L1.016** Scripted Window Security Restrictions is set to Enabled
+- **MP.JL.CISOFFINT.L1.017** Enable Automatic Updates is set to Enabled
+- **MP.JL.CISOFFINT.L1.018** Hide option to enable or disable updates is set to Enabled
+- **MP.JL.CISOFFINT.L1.019** Access: Block macros from running in Office files from the internet is set to Enabled
+- **MP.JL.CISOFFINT.L1.020** Access: Disable Trust Bar Notification for unsigned application add-ins and block them is set to Enabled
+- **MP.JL.CISOFFINT.L1.021** Access: Require that application add-ins are signed by Trusted Publisher is set to Enabled
+- **MP.JL.CISOFFINT.L1.022** Access: Allow Trusted Locations on the network is set to Disabled
+- **MP.JL.CISOFFINT.L1.023** Underline hyperlinks is set to Enabled
+- **MP.JL.CISOFFINT.L1.024** Default file format is set to Enabled: Access 2007
+- **MP.JL.CISOFFINT.L1.025** Do not prompt to convert older databases is set to Disabled
+- **MP.JL.CISOFFINT.L1.026** Modal Trust Decision Only is set to Disabled
+- **MP.JL.CISOFFINT.L1.027** Do not show data extraction options when opening corrupt workbooks is set to Enabled
+- **MP.JL.CISOFFINT.L1.028** Ask to update automatic links is set to Enabled
+- **MP.JL.CISOFFINT.L1.029** Load Pictures from Web pages not created in Excel is set to Disabled
+- **MP.JL.CISOFFINT.L1.030** Internet and network paths as hyperlinks is set to Disabled
+- **MP.JL.CISOFFINT.L1.031** Default file format is set to Enabled: Excel Workbook (*.xlsx)
+- **MP.JL.CISOFFINT.L1.032** Disable AutoRepublish is set to Enabled
+- **MP.JL.CISOFFINT.L1.033** Do not show AutoRepublish warning alert is set to Disabled
+- **MP.JL.CISOFFINT.L1.034** Force file extension to match file type is set to Enabled: Always match file type
+- **MP.JL.CISOFFINT.L1.035** Scan encrypted macros in Excel Open XML workbooks is set to Enabled: Scan encrypted macros (default)
+- **MP.JL.CISOFFINT.L1.036** Excel: Turn off file validation is set to Disabled
+- **MP.JL.CISOFFINT.L1.037** WEBSERVICE Function Notification Settings is set to Enabled: Disable all with notification or Disable all without notification
+- **MP.JL.CISOFFINT.L1.038** Block Excel XLL Add-ins that come from an untrusted source is set to Enabled: Blocked
+- **MP.JL.CISOFFINT.L1.039** Excel: Block macros from running in Office files from the internet is set to Enabled
+- **MP.JL.CISOFFINT.L1.040** Excel: VBA Macro Notification Settings is set to Enabled: Disable all except digitally signed macros
+- **MP.JL.CISOFFINT.L1.041** Prevent Excel from running XLM macros is set to Enabled
+- **MP.JL.CISOFFINT.L1.042** Excel: Require that application add-ins are signed by Trusted Publisher is set to Enabled
+- **MP.JL.CISOFFINT.L1.043** Excel: Disable Trust Bar Notification for unsigned application add-ins and block them is set to Enabled
+- **MP.JL.CISOFFINT.L1.044** Store macro in Personal Macro Workbook by default is set to Enabled
+- **MP.JL.CISOFFINT.L1.045** Excel: Trust access to Visual Basic Project is set to Disabled
+- **MP.JL.CISOFFINT.L1.046** Always prevent untrusted Microsoft Query files from opening is set to Enabled
+- **MP.JL.CISOFFINT.L1.047** Don't allow Dynamic Data Exchange (DDE) server launch in Excel is set to Enabled
+- **MP.JL.CISOFFINT.L1.048** Don't allow Dynamic Data Exchange (DDE) server lookup in Excel is set to Enabled
+- **MP.JL.CISOFFINT.L1.049** dBase III /IV files is set to Enable: Open/Save blocked, use open policy
+- **MP.JL.CISOFFINT.L1.050** Dif and Sylk files is set to Enabled: Open/Save blocked, use open policy
+- **MP.JL.CISOFFINT.L1.051** Excel 2 macrosheets and add-in files is set to Enabled: Open/Save blocked, use open policy
+- **MP.JL.CISOFFINT.L1.052** Excel 2 worksheets is set to Enabled: Open/Save blocked, use open policy
+- **MP.JL.CISOFFINT.L1.053** Excel 3 macrosheets and add-in files is set to Enabled: Open/Save blocked, use open policy
+- **MP.JL.CISOFFINT.L1.054** Excel 3 worksheets is set to Enabled: Open/Save blocked, use open policy
+- **MP.JL.CISOFFINT.L1.055** Excel 4 macrosheets and add-in files is set to Enabled: Open/Save blocked, use open policy
+- **MP.JL.CISOFFINT.L1.056** Excel 4 workbooks is set to Enabled: Open/Save blocked, use open policy
+- **MP.JL.CISOFFINT.L1.057** Excel 4 worksheets is set to Enabled: Open/Save blocked, use open policy
+- **MP.JL.CISOFFINT.L1.058** Excel 95 workbooks is set to Enabled: Open/Save Blocked, Use Open Policy
+- **MP.JL.CISOFFINT.L1.059** Excel 95-97 workbooks and templates is set to Enabled: Open/Save Blocked, Use Open Policy
+- **MP.JL.CISOFFINT.L1.060** Excel 97-2003 workbooks and templates is set to Enabled: Open/Save Blocked, Use Open Policy
+- **MP.JL.CISOFFINT.L1.061** Excel: Set default file block behavior is set to Enabled: Blocked files are not opened
+- **MP.JL.CISOFFINT.L1.062** Web pages and Excel 2003 XML spreadsheets is set to Enabled: Open/Save blocked, use open policy
+- **MP.JL.CISOFFINT.L1.063** Always open untrusted database files in Protected View is set to Enabled
+- **MP.JL.CISOFFINT.L1.064** Excel: Do not open files from the internet zone in Protected View is set to Disabled
+- **MP.JL.CISOFFINT.L1.065** Excel: Do not open files in unsafe locations in Protected View is set to Disabled
+- **MP.JL.CISOFFINT.L1.066** Excel: Set document behavior if file validation fails is set to Enabled: Open in Protected View
+- **MP.JL.CISOFFINT.L1.067** Excel: Set document behavior if file validation fails is set to Unchecked: Do not allow edit
+- **MP.JL.CISOFFINT.L1.068** Excel: Turn off Protected View for attachments opened from Outlook is set to Disabled
+- **MP.JL.CISOFFINT.L1.069** Excel: Allow Trusted Locations on the network is set to Disabled
+- **MP.JL.CISOFFINT.L1.070** Disable UI extending from documents and templates is set to Enabled
+- **MP.JL.CISOFFINT.L1.071** Document Information Panel Beaconing UI is set to Enabled: Always show UI
+- **MP.JL.CISOFFINT.L1.072** Allow users with earlier versions of Office to read with browsers... is set to Disabled
+- **MP.JL.CISOFFINT.L1.073** Always expand groups in Office when restricting permission for documents is set to Enabled
+- **MP.JL.CISOFFINT.L1.074** Always require users to connect to verify permission is set to Enabled
+- **MP.JL.CISOFFINT.L1.075** Never allow users to specify groups when restricting permission for documents is set to Enabled
+- **MP.JL.CISOFFINT.L1.076** Prevent users from changing permissions on rights managed content is set to Disabled
+- **MP.JL.CISOFFINT.L1.077** Block signing into Office is set to Enabled: Org ID only
+- **MP.JL.CISOFFINT.L1.078** Control Blogging is set to Enabled: All Blogging Disabled
+- **MP.JL.CISOFFINT.L1.079** Block opening of pre-release versions of file formats new to Excel 2016 through the Compatibility Pack for Office 2016 and Excel 2016 Converter is set to Enabled
+- **MP.JL.CISOFFINT.L1.080** Block opening of pre-release versions of file formats new to PowerPoint 2016 through the Compatibility Pack for Office 2016 and PowerPoint 2016 Converter is set to Enabled
+- **MP.JL.CISOFFINT.L1.081** ActiveX Control Initialization is set to Enabled: 6
+- **MP.JL.CISOFFINT.L1.082** Allow Basic Authentication prompts from network proxies is set to Disabled
+- **MP.JL.CISOFFINT.L1.083** Allow VBA to load typelib references by path from untrusted intranet locations is set to Disabled
+- **MP.JL.CISOFFINT.L1.084** Automation Security is set to Enabled: Disable Macros by default
+- **MP.JL.CISOFFINT.L1.085** Control how Office handles form-based sign-in prompts is set to Enabled: Block all prompts
+- **MP.JL.CISOFFINT.L1.086** Disable additional security checks on VBA library references that may refer to unsafe locations on the local machine is set to Disabled
+- **MP.JL.CISOFFINT.L1.087** Disable all Trust Bar notifications for security issues is set to Disabled
+- **MP.JL.CISOFFINT.L1.088** Disable password to open UI is set to Disabled
+- **MP.JL.CISOFFINT.L1.089** Encryption mode for Information Rights Management (IRM) is set to Enabled: Cipher Block Chaining (CBC)
+- **MP.JL.CISOFFINT.L1.090** Encryption type for password protected Office 97-2003 files is set to Enabled
+- **MP.JL.CISOFFINT.L1.091** Encryption type for password protected Office Open XML files is set to Enabled
+- **MP.JL.CISOFFINT.L1.092** Load Controls in Forms3 is set to Enabled: 4
+- **MP.JL.CISOFFINT.L1.093** Macro Runtime Scan Scope is set to Enabled: Enable for all documents
+- **MP.JL.CISOFFINT.L1.094** Protect document metadata for password protected files is set to Enabled
+- **MP.JL.CISOFFINT.L1.095** Protect document metadata for rights managed Office Open XML Files is set to Enabled
+- **MP.JL.CISOFFINT.L1.096** Suppress hyperlink warnings is set to Disabled
+- **MP.JL.CISOFFINT.L1.097** Allow mix of policy and user locations is set to Disabled
+- **MP.JL.CISOFFINT.L1.098** Disable the Office client from polling the SharePoint Server for published links is set to Enabled
+- **MP.JL.CISOFFINT.L1.099** Disable Internet Fax feature is set to Enabled
+- **MP.JL.CISOFFINT.L1.100** Legacy format signatures is set to Disabled
+- **MP.JL.CISOFFINT.L1.101** Suppress external signature services menu item is set to Enabled
+- **MP.JL.CISOFFINT.L1.102** Disable Smart Document's use of manifests is set to Enabled
+- **MP.JL.CISOFFINT.L1.103** Open Office documents as read/write while browsing is set to Disabled
+- **MP.JL.CISOFFINT.L1.104** Send Office Feedback is set to Disabled
+- **MP.JL.CISOFFINT.L1.105** Automatically receive small updates to improve reliability is set to Disabled
+- **MP.JL.CISOFFINT.L1.106** Disable Opt-in Wizard on first run is set to Enabled
+- **MP.JL.CISOFFINT.L1.107** Enable Customer Experience Improvement Program is set to Disabled
+- **MP.JL.CISOFFINT.L1.108** Send personal information is set to Disabled
+- **MP.JL.CISOFFINT.L1.109** Do not allow users to change permissions on folders is set to Enabled
+- **MP.JL.CISOFFINT.L1.110** Automatically download attachments is set to Disabled
+- **MP.JL.CISOFFINT.L1.111** Do not include Internet Calendar integration in Outlook is set to Enabled
+- **MP.JL.CISOFFINT.L1.112** Download full text of articles as HTML attachments is set to Disabled
+- **MP.JL.CISOFFINT.L1.113** Synchronize Outlook RSS Feeds with Common Feed List is set to Disabled
+- **MP.JL.CISOFFINT.L1.114** Turn off RSS feature is set to Enabled
+- **MP.JL.CISOFFINT.L1.115** Do not allow Home Page URL to be set in folder Properties is set to Enabled
+- **MP.JL.CISOFFINT.L1.116** Disable user entries to server list is set to Enabled: Publish default, disallow others
+- **MP.JL.CISOFFINT.L1.117** PST Null Data on Delete is set to Enabled
+- **MP.JL.CISOFFINT.L1.118** Plain Text Options is set to Disabled
+- **MP.JL.CISOFFINT.L1.119** Make Outlook the default program for E-mail, Contacts, and Calendar is set to Enabled
+- **MP.JL.CISOFFINT.L1.120** Do not allow folders in non-default stores to be set as folder home pages is set to Enabled
+- **MP.JL.CISOFFINT.L1.121** Access to published calendars is set to Enabled
+- **MP.JL.CISOFFINT.L1.122** Prevent publishing to a DAV server is set to Enabled
+- **MP.JL.CISOFFINT.L1.123** Prevent publishing to Office.com is set to Enabled
+- **MP.JL.CISOFFINT.L1.124** Restrict level of calendar details users can publish is set to Enabled: Disables Full details and Limited details
+- **MP.JL.CISOFFINT.L1.125** Restrict upload method is set to Enabled
+- **MP.JL.CISOFFINT.L1.126** Add e-mail recipients to users' Safe Senders Lists is set to Disabled
+- **MP.JL.CISOFFINT.L1.127** Hide Junk Mail UI is set to Disabled
+- **MP.JL.CISOFFINT.L1.128** Trust e-mail from contacts is set to Disabled
+- **MP.JL.CISOFFINT.L1.129** Turn off Outlook Social Connector is set to Enabled
+- **MP.JL.CISOFFINT.L1.130** Disable 'Remember password' for Internet e-mail accounts is set to Enabled
+- **MP.JL.CISOFFINT.L1.131** Do not automatically sign replies is set to Disabled
+- **MP.JL.CISOFFINT.L1.132** Prompt user to choose security settings if default settings fail is set to Disabled
+- **MP.JL.CISOFFINT.L1.133** Automatically download content for e-mail from people in Safe Senders and Safe Recipients Lists is set to Disabled
+- **MP.JL.CISOFFINT.L1.134** Block Trusted Zones is set to Enabled
+- **MP.JL.CISOFFINT.L1.135** Display pictures and external content in HTML e-mail is set to Enabled
+- **MP.JL.CISOFFINT.L1.136** Do not permit download of content from safe zones is set to Disabled
+- **MP.JL.CISOFFINT.L1.137** Do not display 'Publish to GAL' button is set to Enabled
+- **MP.JL.CISOFFINT.L1.138** Do not provide Continue option on Encryption warning dialog boxes is set to Enabled
+- **MP.JL.CISOFFINT.L1.139** Message Formats is set to Enabled: S/MIME
+- **MP.JL.CISOFFINT.L1.140** S/MIME interoperability with external clients is set to Enabled: Handle internally
+- **MP.JL.CISOFFINT.L1.141** Attachment Secure Temporary Folder is set to Disabled
+- **MP.JL.CISOFFINT.L1.142** Missing CRLs is set to Enabled: Error
+- **MP.JL.CISOFFINT.L1.143** Missing Root Certificates is set to Enabled: Error
+- **MP.JL.CISOFFINT.L1.144** Promote Level 2 errors as errors, not warnings is set to Disabled
+- **MP.JL.CISOFFINT.L1.145** Outlook Security Mode is set to Enabled
+- **MP.JL.CISOFFINT.L1.146** Allow Active X One Off Forms is set to Enabled: Load only Outlook Controls
+- **MP.JL.CISOFFINT.L1.147** Allow hyperlinks in suspected phishing e-mail messages is set to Disabled
+- **MP.JL.CISOFFINT.L1.148** Allow scripts in one-off Outlook forms is set to Disabled
+- **MP.JL.CISOFFINT.L1.149** Allow users to demote attachments to Level 2 is set to Disabled
+- **MP.JL.CISOFFINT.L1.150** Authentication with Exchange server is set to Enabled: Kerberos Password Authentication
+- **MP.JL.CISOFFINT.L1.151** Configure Outlook object model prompt when accessing an address book is set to Enabled: Automatically Deny
+- **MP.JL.CISOFFINT.L1.152** Configure Outlook object model prompt When accessing the Formula property of a UserProperty object is set to Enabled: Automatically Deny
+- **MP.JL.CISOFFINT.L1.153** Configure Outlook object model prompt when executing Save As is set to Enabled: Automatically Deny
+- **MP.JL.CISOFFINT.L1.154** Configure Outlook object model prompt when reading address information is set to Enabled: Automatically Deny
+- **MP.JL.CISOFFINT.L1.155** Configure Outlook object model prompt when responding to meeting and task requests is set to Enabled: Automatically Deny
+- **MP.JL.CISOFFINT.L1.156** Display Level 1 attachments is set to Disabled
+- **MP.JL.CISOFFINT.L1.157** Configure Outlook object model prompt when sending mail is set to Enabled: Automatically Deny
+- **MP.JL.CISOFFINT.L1.158** Do not allow Outlook object model scripts to run for public folders is set to Enabled
+- **MP.JL.CISOFFINT.L1.159** Do not allow Outlook object model scripts to run for shared folders is set to Enabled
+- **MP.JL.CISOFFINT.L1.160** Enable RPC encryption is set to Enabled
+- **MP.JL.CISOFFINT.L1.161** Include Internet in Safe Zones for Automatic Picture Download is set to Disabled
+- **MP.JL.CISOFFINT.L1.162** Junk E-mail protection level is set to Enabled: High
+- **MP.JL.CISOFFINT.L1.163** Minimum encryption settings is set to Enabled: 256
+- **MP.JL.CISOFFINT.L1.164** Outlook Security Policy is set to Use Outlook Security Group Policy
+- **MP.JL.CISOFFINT.L1.165** Prevent users from customizing attachment security settings is set to Enabled
+- **MP.JL.CISOFFINT.L1.166** Remove file extensions blocked as Level 1 is set to Disabled
+- **MP.JL.CISOFFINT.L1.167** Remove file extensions blocked as Level 2 is set to Disabled
+- **MP.JL.CISOFFINT.L1.168** Retrieving CRLs (Certificate Revocation Lists) is set to Enabled: When online always retrieve the CRL
+- **MP.JL.CISOFFINT.L1.169** Security setting for macros is set to Enabled: Warn for signed, disable unsigned
+- **MP.JL.CISOFFINT.L1.170** Set Outlook object model custom actions execution prompt is set to Enabled: Automatically Deny
+- **MP.JL.CISOFFINT.L1.171** Signature Warning is set to Enabled: Always warn about invalid signatures
+- **MP.JL.CISOFFINT.L1.172** Use Unicode format when dragging e-mail message to file system is set to Disabled
+- **MP.JL.CISOFFINT.L1.173** Do not prompt about Level 1 attachments when closing an item is set to Disabled
+- **MP.JL.CISOFFINT.L1.174** Do not prompt about Level 1 attachments when sending an item is set to Disabled
+- **MP.JL.CISOFFINT.L1.175** Default file format is set to Enabled: PowerPoint Presentation (*pptx)
+- **MP.JL.CISOFFINT.L1.176** PowerPoint: Make hidden markup visible is set to Enabled
+- **MP.JL.CISOFFINT.L1.177** Run Programs is set to Enabled: disable (don't run any programs)
+- **MP.JL.CISOFFINT.L1.178** Scan encrypted macros in PowerPoint Open XML presentations is set to Enabled: Scan encrypted macros
+- **MP.JL.CISOFFINT.L1.179** PowerPoint: Turn off file validation is set to Disabled
+- **MP.JL.CISOFFINT.L1.180** Unblock automatic download of linked images is set to Disabled
+- **MP.JL.CISOFFINT.L1.181** PowerPoint: Block macros from running in Office files from the Internet is set to Enabled
+- **MP.JL.CISOFFINT.L1.182** PowerPoint: Require that application add-ins are signed by Trusted Publisher is set to Enabled
+- **MP.JL.CISOFFINT.L1.183** PowerPoint: Disable Trust Bar Notification for unsigned application add-ins and block them is set to Enabled
+- **MP.JL.CISOFFINT.L1.184** PowerPoint: Trust Access to Visual Basic Project is set to Disabled
+- **MP.JL.CISOFFINT.L1.185** PowerPoint: VBA Macro Notification Settings is set to Enabled: Disable all except digitally signed macros
+- **MP.JL.CISOFFINT.L1.186** PowerPoint 97-2003 presentations, shows, templates and add-in files is set to Enabled: Open/Save blocked, use open policy
+- **MP.JL.CISOFFINT.L1.187** PowerPoint: Set default file block behavior is set to Enabled: Blocked files are not opened
+- **MP.JL.CISOFFINT.L1.188** PowerPoint: Do not open files from the Internet zone in Protected View is set to Disabled
+- **MP.JL.CISOFFINT.L1.189** PowerPoint: Do not open files in unsafe locations in Protected View is set to Disabled
+- **MP.JL.CISOFFINT.L1.190** PowerPoint: Set document behavior if file validation fails is set to Enabled: Open in Protected View
+- **MP.JL.CISOFFINT.L1.191** PowerPoint: Set document behavior if file validation fails is set to Unchecked: Do not allow edit
+- **MP.JL.CISOFFINT.L1.192** PowerPoint: Turn off Protected View for attachments opened from Outlook is set to Disabled
+- **MP.JL.CISOFFINT.L1.193** PowerPoint: Allow Trusted Locations on the network is set to Disabled
+- **MP.JL.CISOFFINT.L1.194** Publisher Automation Security Level is set to Enabled: By UI (prompted)
+- **MP.JL.CISOFFINT.L1.195** Publisher: Block macros from running in Office files from the internet is set to Enabled
+- **MP.JL.CISOFFINT.L1.196** Publisher: Require that application add-ins are signed by Trusted Publisher is set to Enabled
+- **MP.JL.CISOFFINT.L1.197** Publisher: Disable Trust Bar Notification for unsigned application add-ins and block them is set to Enabled
+- **MP.JL.CISOFFINT.L1.198** Publisher: VBA Macro Notification Settings is set to Enabled: Disable all except digitally signed macros
+- **MP.JL.CISOFFINT.L1.199** Update automatic links at Open is set to Disabled
+- **MP.JL.CISOFFINT.L1.200** Hidden text is set to Enabled
+- **MP.JL.CISOFFINT.L1.201** Default file format is set to Enabled: Word Document (.docx)
+- **MP.JL.CISOFFINT.L1.202** Word: Make hidden markup visible is set to Enabled
+- **MP.JL.CISOFFINT.L1.203** Word: Turn off file validation is set to Disabled
+- **MP.JL.CISOFFINT.L1.204** Word: Block macros from running in Office files from the Internet is set to Enabled
+- **MP.JL.CISOFFINT.L1.205** Dynamic Data Exchange is set to Disabled
+- **MP.JL.CISOFFINT.L1.206** Word: Require that application add-ins are signed by Trusted Publisher is set to Enabled
+- **MP.JL.CISOFFINT.L1.207** Word: Disable Trust Bar Notification for unsigned application add-ins and block them is set to Enabled
+- **MP.JL.CISOFFINT.L1.208** Scan encrypted macros in Word Open XML Documents is set to Enabled: Scan encrypted macros (default)
+- **MP.JL.CISOFFINT.L1.209** Word: Trust access to Visual Basic Project is set to Disabled
+- **MP.JL.CISOFFINT.L1.210** Word: VBA Macro Notification Settings is set to Enabled: Disable all except digitally signed macros
+- **MP.JL.CISOFFINT.L1.211** Word: Set default file block behavior is set to Enabled: Blocked files are not opened
+- **MP.JL.CISOFFINT.L1.212** Word 2 and earlier binary documents and templates is set to Enabled: Open/Save blocked, use open policy
+- **MP.JL.CISOFFINT.L1.213** Word 2000 binary documents and templates is set to Enabled: Open/Save blocked, use open policy
+- **MP.JL.CISOFFINT.L1.214** Word 2003 binary documents and templates is set to Enabled: Open/Save blocked, use open policy
+- **MP.JL.CISOFFINT.L1.215** Word 2007 and later binary documents and templates is set to Enabled: Open/Save blocked, use open policy
+- **MP.JL.CISOFFINT.L1.216** Word 6.0 binary documents and templates is set to Enabled: Open/Save blocked, use open policy
+- **MP.JL.CISOFFINT.L1.217** Word 95 binary documents and templates is set to Enabled: Open/Save blocked, use open policy
+- **MP.JL.CISOFFINT.L1.218** Word 97 binary documents and templates is set to Enabled: Open/Save blocked, use open policy
+- **MP.JL.CISOFFINT.L1.219** Word XP binary documents and templates is set to Enabled: Open/Save blocked, use open policy
+- **MP.JL.CISOFFINT.L1.220** Word: Do not open files from the internet zone in Protected View is set to Disabled
+- **MP.JL.CISOFFINT.L1.221** Word: Do not open files in unsafe locations in Protected View is set to Disabled
+- **MP.JL.CISOFFINT.L1.222** Word: Set document behavior if file validation fails is set to Enabled: Open in Protected View
+- **MP.JL.CISOFFINT.L1.223** Word: Set document behavior if file validation fails is set to Unchecked: Do not allow edit
+- **MP.JL.CISOFFINT.L1.224** Word: Turn off Protected View for attachments opened from Outlook is set to Disabled
+- **MP.JL.CISOFFINT.L1.225** Word: Allow Trusted Locations on the network is set to Disabled
+
 ## cis-defender-intune-l1 0.2.1
 
 - New pack Guid.
